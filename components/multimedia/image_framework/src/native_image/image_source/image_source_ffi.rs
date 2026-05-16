@@ -4,12 +4,35 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 use crate::native_image::common::*;
-#[cfg(feature = "api-13")]
-use crate::native_image::picture::{Image_AuxiliaryPictureType, OH_PictureNative};
 use ohos_rawfile_sys::RawFileDescriptor;
 pub use ohos_sys_opaque_types::OH_ImageSourceNative;
+#[cfg(feature = "api-13")]
+use ohos_sys_opaque_types::OH_PictureNative;
 use ohos_sys_opaque_types::OH_PixelmapNative;
 
+#[cfg(feature = "api-13")]
+#[cfg_attr(docsrs, doc(cfg(feature = "api-13")))]
+impl Image_AuxiliaryPictureType {
+    pub const AUXILIARY_PICTURE_TYPE_GAINMAP: Image_AuxiliaryPictureType =
+        Image_AuxiliaryPictureType(1);
+    pub const AUXILIARY_PICTURE_TYPE_DEPTH_MAP: Image_AuxiliaryPictureType =
+        Image_AuxiliaryPictureType(2);
+    pub const AUXILIARY_PICTURE_TYPE_UNREFOCUS_MAP: Image_AuxiliaryPictureType =
+        Image_AuxiliaryPictureType(3);
+    pub const AUXILIARY_PICTURE_TYPE_LINEAR_MAP: Image_AuxiliaryPictureType =
+        Image_AuxiliaryPictureType(4);
+    pub const AUXILIARY_PICTURE_TYPE_FRAGMENT_MAP: Image_AuxiliaryPictureType =
+        Image_AuxiliaryPictureType(5);
+}
+#[repr(transparent)]
+/// Define a auxiliary picture type.
+///
+///
+/// Available since API-level: 13
+#[cfg(feature = "api-13")]
+#[cfg_attr(docsrs, doc(cfg(feature = "api-13")))]
+#[derive(Debug, Clone, Hash, PartialEq, Eq)]
+pub struct Image_AuxiliaryPictureType(pub ::core::ffi::c_uint);
 /// Defines image source infomation
 /// [`OH_ImageSourceInfo_Create`].
 ///

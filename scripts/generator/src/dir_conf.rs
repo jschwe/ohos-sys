@@ -310,7 +310,9 @@ pub(crate) fn get_module_bindings_config() -> Vec<DirBindingsConf> {
                         .raw_line("#[cfg(feature = \"api-12\")]")
                         .raw_line("use ohos_sys_opaque_types::OHNativeWindowBuffer;")
                         .raw_line("#[cfg(feature = \"api-22\")]")
-                        .raw_line("use crate::native_buffer::buffer_common::OH_NativeBuffer_ColorSpace;")
+                        .raw_line(
+                            "use crate::native_buffer::buffer_common::OH_NativeBuffer_ColorSpace;",
+                        )
                         .clang_args(["-include", "stdbool.h"])
                         .no_copy("^OH_OnFrameAvailableListener"),
                     _ => builder,
@@ -446,36 +448,34 @@ pub(crate) fn get_module_bindings_config() -> Vec<DirBindingsConf> {
                     ..Default::default()
                 }));
                 let builder = match file_stem {
-                    "pixelmap" => {
-                        builder
-                            .raw_line("use ohos_sys_opaque_types::{napi_env, napi_value, \
-                            OH_NativeBuffer, OH_PixelmapNative, OH_NativeColorSpaceManager};")
-
-                    },
+                    "pixelmap" => builder.raw_line(
+                        "use ohos_sys_opaque_types::{napi_env, napi_value, \
+                            OH_NativeBuffer, OH_PixelmapNative, OH_NativeColorSpaceManager};",
+                    ),
                     "picture" => {
                         builder
-                            .raw_line("use ohos_sys_opaque_types::OH_PixelmapNative;")
+                            .raw_line("use ohos_sys_opaque_types::{OH_PixelmapNative, OH_PictureNative};")
                             .raw_line("use crate::native_image::pixelmap::PIXEL_FORMAT;")
+                            .raw_line("pub use crate::native_image::image_source::Image_AuxiliaryPictureType;")
+                            .blocklist_item("Image_AuxiliaryPictureType")
+                        // OH_PictureNative is blocklisted globally via OPAQUE_TYPES
                     }
-                    "image_source" => {
-                        builder
-                            .raw_line("pub use ohos_sys_opaque_types::OH_ImageSourceNative;")
-                            .raw_line("use ohos_sys_opaque_types::OH_PixelmapNative;")
-                            .raw_line("use ohos_rawfile_sys::RawFileDescriptor;")
-                            .raw_line("#[cfg(feature = \"api-13\")]")
-                            .raw_line("use crate::native_image::picture::{OH_PictureNative, Image_AuxiliaryPictureType};")
-                    }
+                    "image_source" => builder
+                        .raw_line("pub use ohos_sys_opaque_types::OH_ImageSourceNative;")
+                        .raw_line("use ohos_sys_opaque_types::OH_PixelmapNative;")
+                        .raw_line("use ohos_rawfile_sys::RawFileDescriptor;")
+                        .raw_line("#[cfg(feature = \"api-13\")]")
+                        .raw_line("use ohos_sys_opaque_types::OH_PictureNative;")
+                        .allowlist_item("Image_AuxiliaryPictureType"),
                     "image_receiver" => {
                         builder.raw_line("use crate::native_image::image::OH_ImageNative;")
                     }
-                    "image_packer" => {
-                        builder
-                            .raw_line("use ohos_sys_opaque_types::OH_PixelmapNative;")
-                            .raw_line("#[cfg(feature = \"api-12\")]")
-                            .raw_line("use ohos_sys_opaque_types::OH_ImageSourceNative;")
-                            .raw_line("#[cfg(feature = \"api-13\")]")
-                            .raw_line("use crate::native_image::picture::OH_PictureNative;")
-                    }
+                    "image_packer" => builder
+                        .raw_line("use ohos_sys_opaque_types::OH_PixelmapNative;")
+                        .raw_line("#[cfg(feature = \"api-12\")]")
+                        .raw_line("use ohos_sys_opaque_types::OH_ImageSourceNative;")
+                        .raw_line("#[cfg(feature = \"api-13\")]")
+                        .raw_line("use ohos_sys_opaque_types::OH_PictureNative;"),
                     "image" => {
                         builder
                             .raw_line("use ohos_sys_opaque_types::OH_NativeBuffer;")
@@ -717,7 +717,9 @@ pub(crate) fn get_module_bindings_config() -> Vec<DirBindingsConf> {
                         // API-22 TextLayoutManager APIs use drawing types from `ohos-drawing-sys`,
                         // which is not a dependency of this crate; blocklist for now.
                         .blocklist_function("OH_ArkUI_TextLayoutManager_GetRectsForRange")
-                        .blocklist_function("OH_ArkUI_TextLayoutManager_GetGlyphPositionAtCoordinate")
+                        .blocklist_function(
+                            "OH_ArkUI_TextLayoutManager_GetGlyphPositionAtCoordinate",
+                        )
                         .blocklist_function("OH_ArkUI_TextLayoutManager_GetLineMetrics"),
                     "ui_input_event" => builder
                         .bitfield_enum("ArkUI_ModifierKeyName")
@@ -1111,9 +1113,7 @@ pub(crate) fn get_module_bindings_config() -> Vec<DirBindingsConf> {
                     }
                     "native_huks_external_crypto_api" => builder
                         .raw_line("use crate::native_huks_type::*;")
-                        .raw_line(
-                            "use crate::native_huks_external_crypto_type::*;",
-                        ),
+                        .raw_line("use crate::native_huks_external_crypto_type::*;"),
                     "native_huks_external_crypto_type" => {
                         builder.raw_line("use crate::native_huks_type::*;")
                     }

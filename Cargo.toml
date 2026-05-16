@@ -168,6 +168,7 @@ all-components = [
     "image-kit-image-packer",
     "image-kit-image-receiver",
     "image-kit-image-source",
+    "image-kit-picture",
     "image-kit-pixelmap",
     "multimodal-input",
     "ohaudio",
@@ -628,6 +629,7 @@ api-23 = ["api-22",
 image-kit-image-packer = ["ohos-image-kit-sys/image-packer"]
 image-kit-image-receiver = ["ohos-image-kit-sys/image-receiver"]
 image-kit-image-source = ["ohos-image-kit-sys/image-source"]
+image-kit-picture = ["ohos-image-kit-sys/picture"]
 image-kit-pixelmap = ["ohos-image-kit-sys/pixelmap"]
 xcomponent-keyboard-types = ["xcomponent-sys/keyboard-types"]
 

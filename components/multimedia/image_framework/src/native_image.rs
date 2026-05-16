@@ -13,8 +13,8 @@ pub mod image_receiver;
 #[cfg(feature = "image-source")]
 #[cfg_attr(docsrs, doc(cfg(feature = "image-source")))]
 pub mod image_source;
-#[cfg(all(feature = "api-13", feature = "pixelmap"))]
-#[cfg_attr(docsrs, doc(cfg(all(feature = "api-13", feature = "pixelmap"))))]
+#[cfg(all(feature = "api-13", feature = "picture"))]
+#[cfg_attr(docsrs, doc(cfg(all(feature = "api-13", feature = "picture"))))]
 pub mod picture;
 #[cfg(feature = "pixelmap")]
 #[cfg_attr(docsrs, doc(cfg(feature = "pixelmap")))]

@@ -60,7 +60,7 @@ image-receiver = []
 ## Image decoding
 image-source = ["dep:ohos-rawfile-sys"]
 ## Picture
-picture = ["pixelmap"]
+picture = ["pixelmap", "image-source"]
 ## Pixel Map
 pixelmap = []
 ## Document available features when building the documentation

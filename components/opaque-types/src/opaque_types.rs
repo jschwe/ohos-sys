@@ -73,6 +73,10 @@ pub struct Input_Hotkey {
     _unused: [u8; 0],
 }
 #[repr(C)]
+pub struct OH_PictureNative {
+    _unused: [u8; 0],
+}
+#[repr(C)]
 pub struct OH_ImageSourceNative {
     _unused: [u8; 0],
 }

@@ -4,10 +4,10 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 use crate::native_image::common::*;
-#[cfg(feature = "api-13")]
-use crate::native_image::picture::OH_PictureNative;
 #[cfg(feature = "api-12")]
 use ohos_sys_opaque_types::OH_ImageSourceNative;
+#[cfg(feature = "api-13")]
+use ohos_sys_opaque_types::OH_PictureNative;
 use ohos_sys_opaque_types::OH_PixelmapNative;
 
 /// Define a ImagePacker struct type, used for ImagePacker pointer controls.
