@@ -1,0 +1,11 @@
+--- a/components/qos/src/qos_ffi.rs
++++ b/components/qos/src/qos_ffi.rs
+@@ -49,6 +49,8 @@
+ #[cfg(feature = "api-20")]
+ #[cfg_attr(docsrs, doc(cfg(feature = "api-20")))]
+ pub type OH_QoS_GewuRequest = ::core::ffi::c_uint;
++#[cfg(feature = "api-20")]
++#[cfg_attr(docsrs, doc(cfg(feature = "api-20")))]
+ pub type OH_QoS_GewuResult = Result<(), OH_QoS_GewuErrorCode>;
+ #[cfg(feature = "api-20")]
+ #[cfg_attr(docsrs, doc(cfg(feature = "api-20")))]

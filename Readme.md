@@ -69,7 +69,7 @@ already been generated.
 | ohcamera                                |        |           |                           |
 | Pasteboard                              | ✅      | 23        | [ohos-pasteboard-sys]     |
 | purgeable_memory                        |        |           |                           |
-| qos                                     |        |           |                           |
+| qos                                     | ✅      | 23        | [ohos-qos-sys]            |
 | rawfile                                 | ✅      | 23        | [ohos-rawfile-sys]        |
 | resourcemanager                         |        |           |                           |
 | sensors                                 | ✅      | 23        | [ohos-sensors-sys]        |
@@ -105,6 +105,7 @@ already been generated.
 [arkweb-sys]: https://docs.rs/arkweb-sys/latest/arkweb_sys/
 [ohos-abilitykit-sys]: https://docs.rs/ohos-abilitykit-sys/latest/ohos_abilitykit_sys/
 [ohos-vsync-sys]: https://docs.rs/ohos-vsync-sys/latest/ohos_vsync_sys/
+[ohos-qos-sys]: https://docs.rs/ohos-qos-sys/latest/ohos_qos_sys/
 [udmf-sys]: https://docs.rs/udmf-sys/latest/udmf_sys/
 [ohos-sensors-sys]: https://docs.rs/ohos-sensors-sys/latest/ohos_sensors_sys/
 [xcomponent-sys]: https://docs.rs/xcomponent-sys/latest/xcomponent_sys/

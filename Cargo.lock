@@ -221,6 +221,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "ohos-qos-sys"
+version = "0.1.0"
+dependencies = [
+ "document-features",
+]
+
+[[package]]
 name = "ohos-rawfile-sys"
 version = "0.1.4"
 dependencies = [
@@ -271,6 +278,7 @@ dependencies = [
  "ohos-netmanager-sys",
  "ohos-netstack-sys",
  "ohos-pasteboard-sys",
+ "ohos-qos-sys",
  "ohos-rawfile-sys",
  "ohos-rdb-sys",
  "ohos-sensors-sys",

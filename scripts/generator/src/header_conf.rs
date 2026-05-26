@@ -119,6 +119,35 @@ pub(crate) fn get_bindings_config(_api_version: u32) -> Vec<BindingConf> {
             }),
         },
         BindingConf {
+            include_filename: "qos/qos.h".to_string(),
+            output_prefix: "components/qos/src/qos".to_string(),
+            set_builder_opts: Box::new(|builder| {
+                builder
+                    .result_error_enum("OH_QoS_GewuErrorCode")
+                    .parse_callbacks(Box::new(ResultEnumParseCallbacks {
+                        rename_item: Box::new(|name| match name {
+                            "OH_QoS_GewuErrorCode" => Some("OH_QoS_GewuResult".to_string()),
+                            _ => None,
+                        }),
+                        rename_enum_variant: None,
+                    }))
+                    // `OH_QOS_GEWU_INVALID_{SESSION,REQUEST}_ID` are defined with
+                    // C++ `static_cast<…>(0xffffffffU)` which bindgen drops
+                    // silently in both C and C++ modes (its macro evaluator
+                    // doesn't handle `static_cast` even though clang parses it).
+                    // Blocklist and re-emit as plain Rust constants — gated on
+                    // api-20 since both ids and their types are `@since 20`.
+                    .blocklist_item("OH_QOS_GEWU_INVALID_SESSION_ID")
+                    .blocklist_item("OH_QOS_GEWU_INVALID_REQUEST_ID")
+                    .raw_line("#[cfg(feature = \"api-20\")]")
+                    .raw_line("#[cfg_attr(docsrs, doc(cfg(feature = \"api-20\")))]")
+                    .raw_line("pub const OH_QOS_GEWU_INVALID_SESSION_ID: OH_QoS_GewuSession = 0xffff_ffff;")
+                    .raw_line("#[cfg(feature = \"api-20\")]")
+                    .raw_line("#[cfg_attr(docsrs, doc(cfg(feature = \"api-20\")))]")
+                    .raw_line("pub const OH_QOS_GEWU_INVALID_REQUEST_ID: OH_QoS_GewuRequest = 0xffff_ffff;")
+            }),
+        },
+        BindingConf {
             include_filename: "arkui/ui_input_event.h".to_string(),
             output_prefix: "components/arkui/src/ui_input_event/ui_input_event_anon_enums"
                 .to_string(),
