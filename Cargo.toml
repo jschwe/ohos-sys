@@ -1,6 +1,6 @@
 [package]
 name = "ohos-sys"
-version = "0.8.7"
+version = "0.9.0"
 edition = "2021"
 description = "Bindings to the native API of OpenHarmony OS"
 license = "Apache-2.0"
@@ -15,11 +15,12 @@ members = [
     "components/*",
     "components/multimedia/image_framework",
     "components/multimedia/player_framework",
+    "components/multimedia/video_processing_engine",
 ]
 exclude = ["components/multimedia", "scripts"]
 
 [workspace.dependencies]
-ohos-sys-opaque-types = { version = "0.1.9", path = "components/opaque-types" }
+ohos-sys-opaque-types = { version = "0.1.10", path = "components/opaque-types" }
 
 [dependencies]
 document-features = { version = "0.2", optional = true }
@@ -35,6 +36,7 @@ ohos-abilitykit-sys = { version = "0.1.6", optional = true, path = "components/a
 ohos-deviceinfo-sys = { version = "0.1.7", optional = true, path = "components/deviceinfo" }
 ohos-drawing-sys = { path = "components/drawing", version = "0.3.4", optional = true }
 ohos-image-kit-sys = { version = "0.3.6", optional = true, path = "components/multimedia/image_framework" }
+ohos-video-processing-engine-sys = { version = "0.1.0", optional = true, path = "components/multimedia/video_processing_engine" }
 ohos-ime-sys = { version = "0.2.3", optional = true, path = "components/inputmethod" }
 ohaudio-sys = { version = "0.1.0", optional = true, path = "components/ohaudio" }
 arkweb-sys = { version = "0.1.0", optional = true, path = "components/web" }
@@ -108,6 +110,11 @@ net_ssl = ["dep:ohos-net-ssl-sys"]
 netstack = ["dep:ohos-netstack-sys"]
 ## Bindings to the [Image Kit](https://docs.openharmony.cn/pages/v5.0/en/application-dev/media/image/image-overview.md)
 image-kit = ["dep:ohos-image-kit-sys"]
+## Bindings to the VideoProcessingEngine subsystem (GPU-accelerated colour space
+## conversion, HDR metadata, scaling). Re-exports `ohos-video-processing-engine-sys`.
+## Use `video-processing-engine-video-processing` / `video-processing-engine-image-processing`
+## to select individual modules.
+video-processing-engine = ["dep:ohos-video-processing-engine-sys"]
 ## Bindings to the Multimodal Input kit.
 multimodal-input = ["dep:ohos-input-sys"]
 ## Enables bindings to the OHAudio module.
@@ -170,6 +177,9 @@ all-components = [
     "image-kit-image-source",
     "image-kit-picture",
     "image-kit-pixelmap",
+    "video-processing-engine",
+    "video-processing-engine-video-processing",
+    "video-processing-engine-image-processing",
     "multimodal-input",
     "ohaudio",
     "napi",
@@ -231,6 +241,7 @@ api-12 = [
     "ohos-deviceinfo-sys?/api-12",
     "ohos-drawing-sys?/api-12",
     "ohos-image-kit-sys?/api-12",
+    "ohos-video-processing-engine-sys?/api-12",
     "ohos-ime-sys?/api-12",
     "ohos-ipckit-sys?/api-12",
     "ohos-input-sys?/api-12",
@@ -266,6 +277,7 @@ api-13 = [
     "ohos-deviceinfo-sys?/api-13",
     "ohos-drawing-sys?/api-13",
     "ohos-image-kit-sys?/api-13",
+    "ohos-video-processing-engine-sys?/api-13",
     "ohos-ime-sys?/api-13",
     "ohos-ipckit-sys?/api-13",
     "ohos-input-sys?/api-13",
@@ -301,6 +313,7 @@ api-14 = [
     "ohos-deviceinfo-sys?/api-14",
     "ohos-drawing-sys?/api-14",
     "ohos-image-kit-sys?/api-14",
+    "ohos-video-processing-engine-sys?/api-14",
     "ohos-ime-sys?/api-14",
     "ohos-ipckit-sys?/api-14",
     "ohos-input-sys?/api-14",
@@ -336,6 +349,7 @@ api-15 = [
     "ohos-deviceinfo-sys?/api-15",
     "ohos-drawing-sys?/api-15",
     "ohos-image-kit-sys?/api-15",
+    "ohos-video-processing-engine-sys?/api-15",
     "ohos-ime-sys?/api-15",
     "ohos-ipckit-sys?/api-15",
     "ohos-input-sys?/api-15",
@@ -370,6 +384,7 @@ api-16 = ["api-15",
     "ohos-deviceinfo-sys?/api-16",
     "ohos-drawing-sys?/api-16",
     "ohos-image-kit-sys?/api-16",
+    "ohos-video-processing-engine-sys?/api-16",
     "ohos-ime-sys?/api-16",
     "ohos-ipckit-sys?/api-16",
     "ohos-input-sys?/api-16",
@@ -403,6 +418,7 @@ api-17 = ["api-16",
     "ohos-deviceinfo-sys?/api-17",
     "ohos-drawing-sys?/api-17",
     "ohos-image-kit-sys?/api-17",
+    "ohos-video-processing-engine-sys?/api-17",
     "ohos-ime-sys?/api-17",
     "ohos-ipckit-sys?/api-17",
     "ohos-input-sys?/api-17",
@@ -436,6 +452,7 @@ api-18 = ["api-17",
     "ohos-deviceinfo-sys?/api-18",
     "ohos-drawing-sys?/api-18",
     "ohos-image-kit-sys?/api-18",
+    "ohos-video-processing-engine-sys?/api-18",
     "ohos-ime-sys?/api-18",
     "ohos-ipckit-sys?/api-18",
     "ohos-input-sys?/api-18",
@@ -469,6 +486,7 @@ api-19 = ["api-18",
     "ohos-deviceinfo-sys?/api-19",
     "ohos-drawing-sys?/api-19",
     "ohos-image-kit-sys?/api-19",
+    "ohos-video-processing-engine-sys?/api-19",
     "ohos-ime-sys?/api-19",
     "ohos-ipckit-sys?/api-19",
     "ohos-input-sys?/api-19",
@@ -502,6 +520,7 @@ api-20 = ["api-19",
     "ohos-deviceinfo-sys?/api-20",
     "ohos-drawing-sys?/api-20",
     "ohos-image-kit-sys?/api-20",
+    "ohos-video-processing-engine-sys?/api-20",
     "ohos-ime-sys?/api-20",
     "ohos-ipckit-sys?/api-20",
     "ohos-input-sys?/api-20",
@@ -535,6 +554,7 @@ api-21 = ["api-20",
     "ohos-deviceinfo-sys?/api-21",
     "ohos-drawing-sys?/api-21",
     "ohos-image-kit-sys?/api-21",
+    "ohos-video-processing-engine-sys?/api-21",
     "ohos-ime-sys?/api-21",
     "ohos-ipckit-sys?/api-21",
     "ohos-input-sys?/api-21",
@@ -568,6 +588,7 @@ api-22 = ["api-21",
     "ohos-deviceinfo-sys?/api-22",
     "ohos-drawing-sys?/api-22",
     "ohos-image-kit-sys?/api-22",
+    "ohos-video-processing-engine-sys?/api-22",
     "ohos-ime-sys?/api-22",
     "ohos-ipckit-sys?/api-22",
     "ohos-input-sys?/api-22",
@@ -601,6 +622,7 @@ api-23 = ["api-22",
     "ohos-deviceinfo-sys?/api-23",
     "ohos-drawing-sys?/api-23",
     "ohos-image-kit-sys?/api-23",
+    "ohos-video-processing-engine-sys?/api-23",
     "ohos-ime-sys?/api-23",
     "ohos-ipckit-sys?/api-23",
     "ohos-input-sys?/api-23",
@@ -631,6 +653,8 @@ image-kit-image-receiver = ["ohos-image-kit-sys/image-receiver"]
 image-kit-image-source = ["ohos-image-kit-sys/image-source"]
 image-kit-picture = ["ohos-image-kit-sys/picture"]
 image-kit-pixelmap = ["ohos-image-kit-sys/pixelmap"]
+video-processing-engine-video-processing = ["ohos-video-processing-engine-sys/video-processing"]
+video-processing-engine-image-processing = ["ohos-video-processing-engine-sys/image-processing"]
 xcomponent-keyboard-types = ["xcomponent-sys/keyboard-types"]
 
 #! ### Internal features

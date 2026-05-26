@@ -6,15 +6,8 @@
 #![allow(deprecated)]
 #[allow(unused_imports)]
 use crate::averrors::OH_AVErrCode;
+pub use ohos_sys_opaque_types::OH_AVFormat;
 
-/// Forward declaration of OH_AVFormat.
-///
-///
-/// Available since API-level: 9
-#[repr(C)]
-pub struct OH_AVFormat {
-    _unused: [u8; 0],
-}
 impl OH_AVPixelFormat {
     /// yuv 420 planar.
     pub const AV_PIXEL_FORMAT_YUVI420: OH_AVPixelFormat = OH_AVPixelFormat(1);

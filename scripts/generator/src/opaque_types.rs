@@ -1,10 +1,11 @@
-pub(crate) static OPAQUE_TYPES: [&str; 50] = [
+pub(crate) static OPAQUE_TYPES: [&str; 51] = [
     "ArkUI_AccessibilityProvider",
     "ArkUI_Context",
     "ArkUI_ContextHandle",
     "ArkUI_Node",
     "ArkUI_NodeHandle",
     "ArkUI_XComponentSurfaceConfig",
+    "OH_AVFormat",
     "OH_Drawing_PositionAndAffinity",
     "OH_Drawing_TextBox",
     "OH_PixelmapNative",

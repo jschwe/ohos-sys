@@ -1,6 +1,6 @@
 [package]
 name = "ohos-sys-opaque-types"
-version = "0.1.9"
+version = "0.1.10"
 edition = "2021"
 keywords = ["OpenHarmony", "HarmonyOS"]
 description = "Internal helper cratefor opaque type bindings that are used in multiple ohos-sys crates"

@@ -55,6 +55,37 @@ impl bindgen::callbacks::ParseCallbacks for ResultEnumParseCallbacks {
 pub(crate) fn get_module_bindings_config() -> Vec<DirBindingsConf> {
     vec![
         DirBindingsConf {
+            directory: "multimedia/video_processing_engine".to_string(),
+            output_dir: "components/multimedia/video_processing_engine/src".to_string(),
+            rename_output_file: None,
+            set_builder_opts: Box::new(|file_stem, header_path, builder| {
+                let builder = builder
+                    .allowlist_file(header_path.to_str().unwrap())
+                    .clang_args(["-x", "c++"]);
+                match file_stem {
+                    "video_processing" => builder
+                        .raw_line("use ohos_sys_opaque_types::{OHNativeWindow, OH_AVFormat};")
+                        .raw_line(
+                            "use crate::video_processing_types::{\
+                                OH_VideoProcessing, VideoProcessing_Callback, \
+                                VideoProcessing_ColorSpaceInfo, VideoProcessing_ErrorCode, \
+                                OH_VideoProcessingCallback_OnError, \
+                                OH_VideoProcessingCallback_OnNewOutputBuffer, \
+                                OH_VideoProcessingCallback_OnState};",
+                        ),
+                    "image_processing" => builder
+                        .raw_line("use ohos_sys_opaque_types::{OH_AVFormat, OH_PixelmapNative};")
+                        .raw_line(
+                            "use crate::image_processing_types::{\
+                                OH_ImageProcessing, ImageProcessing_ColorSpaceInfo, \
+                                ImageProcessing_ErrorCode};",
+                        ),
+                    _ => builder,
+                }
+            }),
+            ..Default::default()
+        },
+        DirBindingsConf {
             directory: "multimedia/player_framework".to_string(),
             output_dir: "components/multimedia/player_framework/src".to_string(),
             rename_output_file: Some(Box::new(|stem| strip_prefix(stem, "native_"))),
@@ -181,6 +212,8 @@ pub(crate) fn get_module_bindings_config() -> Vec<DirBindingsConf> {
                     "avmetadata_extractor_base" => builder
                         .raw_line("#[cfg(feature = \"api-23\")]")
                         .raw_line("use ohos_sys_opaque_types::OH_PixelmapNative;"),
+                    "avformat" => builder
+                        .raw_line("pub use ohos_sys_opaque_types::OH_AVFormat;"),
                     "avbuffer" => builder.raw_line("use ohos_sys_opaque_types::OH_NativeBuffer;")
                         .raw_line("use crate::avbuffer_info::OH_AVCodecBufferAttr;")
                         .raw_line("use crate::avformat::OH_AVFormat;"),

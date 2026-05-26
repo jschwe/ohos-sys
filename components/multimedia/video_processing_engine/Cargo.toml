@@ -1,0 +1,66 @@
+[package]
+name = "ohos-video-processing-engine-sys"
+version = "0.1.0"
+edition = "2021"
+description = "Raw bindings to the multimedia VideoProcessingEngine (video_processing / image_processing) on OpenHarmony"
+license = "Apache-2.0"
+repository = "https://github.com/openharmony-rs/ohos-sys"
+keywords = ["OpenHarmony", "HarmonyOS", "ffi", "video", "image"]
+readme = "README.md"
+
+[dependencies]
+document-features = { version = "0.2", optional = true }
+ohos-sys-opaque-types = { workspace = true }
+
+[features]
+default = []
+
+#! ### OpenHarmony API level
+#! `video_processing` is available since API-level 12.
+#! `image_processing` is available since API-level 13.
+#! Defaults to no bindings at all, to maintain feature composability in `ohos-sys`.
+#! Optionally enable one of the `api-*` features to get access to bindings.
+
+## Enables bindings for OpenHarmony API-level 12.
+api-12 = []
+## Enables bindings for OpenHarmony API-level 13.
+api-13 = ["api-12"]
+## Enables bindings for OpenHarmony API-level 14.
+api-14 = ["api-13"]
+## Enables bindings for OpenHarmony API-level 15.
+api-15 = ["api-14"]
+## Enables bindings for OpenHarmony API-level 16.
+api-16 = ["api-15"]
+## Enables bindings for OpenHarmony API-level 17.
+api-17 = ["api-16"]
+## Enables bindings for OpenHarmony API-level 18 (5.1.0).
+api-18 = ["api-17"]
+## Enables bindings for OpenHarmony API-level 19.
+api-19 = ["api-18"]
+## Enables bindings for OpenHarmony API-level 20.
+api-20 = ["api-19"]
+## Enables bindings for OpenHarmony API-level 21.
+api-21 = ["api-20"]
+## Enables bindings for OpenHarmony API-level 22.
+api-22 = ["api-21"]
+## Enables bindings for OpenHarmony API-level 23.
+api-23 = ["api-22"]
+
+#! ### Modules
+#!
+#! VideoProcessingEngine ships two separate shared libraries with independent
+#! header pairs. Pick the modules you need; each links its own `.so`.
+
+## Bindings to `multimedia/video_processing_engine/video_processing.h` and `video_processing_types.h`
+## (links `libvideo_processing.so`). Requires API-level 12.
+video-processing = []
+## Bindings to `multimedia/video_processing_engine/image_processing.h` and `image_processing_types.h`
+## (links `libimage_processing.so`). Requires API-level 13.
+image-processing = []
+
+## Document available features when building the documentation
+document-features = ["dep:document-features"]
+
+[package.metadata.docs.rs]
+features = ["document-features", "api-13", "video-processing", "image-processing"]
+targets = ["aarch64-unknown-linux-ohos", "armv7-unknown-linux-ohos", "x86_64-unknown-linux-ohos"]

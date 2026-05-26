@@ -245,7 +245,7 @@ dependencies = [
 
 [[package]]
 name = "ohos-sys"
-version = "0.8.7"
+version = "0.9.0"
 dependencies = [
  "arkui-sys",
  "arkweb-sys",
@@ -274,6 +274,7 @@ dependencies = [
  "ohos-rdb-sys",
  "ohos-sensors-sys",
  "ohos-sys-opaque-types",
+ "ohos-video-processing-engine-sys",
  "ohos-vsync-sys",
  "ohos-window-manager-sys",
  "ohos-window-sys",
@@ -283,7 +284,15 @@ dependencies = [
 
 [[package]]
 name = "ohos-sys-opaque-types"
-version = "0.1.9"
+version = "0.1.10"
+
+[[package]]
+name = "ohos-video-processing-engine-sys"
+version = "0.1.0"
+dependencies = [
+ "document-features",
+ "ohos-sys-opaque-types",
+]
 
 [[package]]
 name = "ohos-vsync-sys"
