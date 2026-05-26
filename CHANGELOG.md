@@ -1,12 +1,44 @@
 # Changelog
 
-## v0.8.7
+## v0.9.0
 
-- Update bindings to API-22 and API-23.
-- Add `api-22` and `api-23` features that propagate to all sub-crates.
+### Added
+
+New sub-crates, each also re-exported as an umbrella feature on `ohos-sys`:
+
+- `accesstoken` — `ohos-accesstoken-sys` (AbilityAccessControl / AccessToken NDK)
+- `asset-store` — `ohos-asset-store-sys` (AssetStoreKit)
+- `basic-services-kit` — `ohos-basic-services-kit-sys`, with sub-features
+  `commonevent`, `battery-info`, `print`, `scan`, `os-account`, `time-service`
+- `crypto` — `ohos-crypto-sys` (CryptoArchitectureKit)
+- `huks` — `ohos-huks-sys` (Universal Keystore Kit)
+- `ipckit` — `ohos-ipckit-sys`
+- `locationkit` — `ohos-locationkit-sys`
+- `media` — `ohos-media-sys` (Player / Recorder / Transcoder, AVCodec,
+  demuxer / muxer, screen capture, low-power AV sinks; sub-crate existed
+  previously, this release adds the umbrella re-export)
+- `netmanager` / `net_ssl` / `netstack` — NetworkKit subsystems
+  (`ohos-netmanager-sys`, `ohos-net-ssl-sys`, `ohos-netstack-sys`)
+- `ohaudio` — `ohaudio-sys`
+- `qos` — `ohos-libqos-sys` (QoS thread scheduling, plus the Gewu on-device
+  LLM inference APIs that share `libqos.so` at API-20+)
+- `rdb` — `ohos-rdb-sys` (Relational Database)
+- `sensors` — `ohos-sensors-sys`
+- `video-processing-engine` — `ohos-video-processing-engine-sys`
+  (GPU-accelerated colour-space conversion, HDR metadata, scaling); split
+  via `video-processing-engine-video-processing` /
+  `video-processing-engine-image-processing`
+- `web` — `arkweb-sys`
+
+### Updated
+
+- Update bindings to API-22 and API-23. New `api-22` / `api-23` features
+  propagate to all sub-crates.
 - New `drawing` modules: `lattice`, `path_iterator` (API-23).
-- New `huks` modules: `native_huks_external_crypto_api`, `native_huks_external_crypto_type` (API-22).
-- New `multimedia/player_framework` modules: `avmedia_base`, `avmedia_source`, `avmetakeys` (API-23).
+- New `huks` modules: `native_huks_external_crypto_api`,
+  `native_huks_external_crypto_type` (API-22).
+- New `multimedia/player_framework` modules: `avmedia_base`,
+  `avmedia_source`, `avmetakeys` (API-23).
 - New `multimodal-input` module: `pointer_style` (API-22).
 
 ## v0.8.6 (2026-12-15)
