@@ -1,6 +1,6 @@
 [package]
 name = "ohos-netstack-sys"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Raw bindings to the OpenHarmony NetworkKit (netstack) native APIs"
 license = "Apache-2.0"

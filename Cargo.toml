@@ -25,10 +25,10 @@ ohos-sys-opaque-types = { version = "0.1.10", path = "components/opaque-types" }
 [dependencies]
 document-features = { version = "0.2", optional = true }
 arkui-sys = { version = "0.3.4", optional = true, path = "components/arkui" }
-ohos-accesstoken-sys = { version = "0.1.0", optional = true, path = "components/accesstoken" }
-ohos-asset-store-sys = { version = "0.1.0", optional = true, path = "components/asset" }
+ohos-accesstoken-sys = { version = "0.1.1", optional = true, path = "components/accesstoken" }
+ohos-asset-store-sys = { version = "0.1.1", optional = true, path = "components/asset" }
 ohos-basic-services-kit-sys = { version = "0.1.0", optional = true, path = "components/basic-services-kit" }
-ohos-crypto-sys = { version = "0.1.0", optional = true, path = "components/crypto" }
+ohos-crypto-sys = { version = "0.1.1", optional = true, path = "components/crypto" }
 ohos-huks-sys = { version = "0.1.1", optional = true, path = "components/huks" }
 hilog-sys = { version = "0.1.8", optional = true, path = "components/hilog" }
 hitrace-sys = { version = "0.1.10", optional = true, path = "components/hitrace" }
@@ -38,20 +38,20 @@ ohos-drawing-sys = { path = "components/drawing", version = "0.3.4", optional = 
 ohos-image-kit-sys = { version = "0.3.6", optional = true, path = "components/multimedia/image_framework" }
 ohos-media-sys = { version = "0.1.1", optional = true, path = "components/multimedia/player_framework" }
 ohos-video-processing-engine-sys = { version = "0.1.0", optional = true, path = "components/multimedia/video_processing_engine" }
-ohos-ime-sys = { version = "0.2.3", optional = true, path = "components/inputmethod" }
+ohos-ime-sys = { version = "0.2.4", optional = true, path = "components/inputmethod" }
 ohaudio-sys = { version = "0.1.0", optional = true, path = "components/ohaudio" }
-arkweb-sys = { version = "0.1.0", optional = true, path = "components/web" }
-ohos-ipckit-sys = { version = "0.1.0", optional = true, path = "components/ipckit" }
-ohos-locationkit-sys = { version = "0.1.0", optional = true, path = "components/locationkit" }
-ohos-netmanager-sys = { version = "0.1.0", optional = true, path = "components/netmanager" }
-ohos-net-ssl-sys = { version = "0.1.0", optional = true, path = "components/net_ssl" }
-ohos-netstack-sys = { version = "0.1.0", optional = true, path = "components/netstack" }
+arkweb-sys = { version = "0.1.1", optional = true, path = "components/web" }
+ohos-ipckit-sys = { version = "0.1.1", optional = true, path = "components/ipckit" }
+ohos-locationkit-sys = { version = "0.1.1", optional = true, path = "components/locationkit" }
+ohos-netmanager-sys = { version = "0.1.1", optional = true, path = "components/netmanager" }
+ohos-net-ssl-sys = { version = "0.1.1", optional = true, path = "components/net_ssl" }
+ohos-netstack-sys = { version = "0.1.1", optional = true, path = "components/netstack" }
 ohos-input-sys = { version = "0.3.4", optional = true, path = "components/multimodal-input" }
 ohos-pasteboard-sys = { version = "0.1.5", optional = true, path = "components/pasteboard" }
 ohos-libqos-sys = { version = "0.1.0", optional = true, path = "components/qos" }
 ohos-rawfile-sys = { version = "0.1.4", optional = true, path = "components/rawfile" }
 ohos-rdb-sys = { version = "0.1.0", optional = true, path = "components/rdb" }
-ohos-sensors-sys = { version = "0.1.0", optional = true, path = "components/sensors" }
+ohos-sensors-sys = { version = "0.1.1", optional = true, path = "components/sensors" }
 ohos-sys-opaque-types = { workspace = true }
 ohos-window-sys = { version = "0.1.7", optional = true, path = "components/window" }
 ohos-vsync-sys = { version = "0.1.6", optional = true, path = "components/vsync" }

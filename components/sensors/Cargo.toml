@@ -1,6 +1,6 @@
 [package]
 name = "ohos-sensors-sys"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 keywords = ["OpenHarmony", "HarmonyOS", "sensors", "vibrator"]
 description = "Rust bindings to the sensors and vibrator modules of OpenHarmony"

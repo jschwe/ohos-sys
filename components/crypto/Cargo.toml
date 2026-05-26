@@ -1,6 +1,6 @@
 [package]
 name = "ohos-crypto-sys"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Raw bindings to the CryptoArchitectureKit NDK of OpenHarmony"
 license = "Apache-2.0"

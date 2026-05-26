@@ -1,6 +1,6 @@
 [package]
 name = "ohos-net-ssl-sys"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Raw bindings to the OpenHarmony NetworkKit (net_ssl) native APIs"
 license = "Apache-2.0"

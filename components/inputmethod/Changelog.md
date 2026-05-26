@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.4
+
+- Update bindings to API-22 and API-23. Adds
+  `OH_TextEditorProxy_SetCallbackInMainThread` (API-22) and
+  `OH_InputMethodController_AttachWithUIContext` (API-23).
+
 ## 0.2.3
 
 - Update to API-21 bindings

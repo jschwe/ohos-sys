@@ -6,4 +6,4 @@
 
 ## 0.1.0
 
-- Initial LocationKit bindings for API-13 through API-21.
+- Initial AbilityAccessControl (AccessToken) bindings for API-12 through API-21.
