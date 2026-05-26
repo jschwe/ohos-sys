@@ -176,6 +176,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "ohos-libqos-sys"
+version = "0.1.0"
+dependencies = [
+ "document-features",
+]
+
+[[package]]
 name = "ohos-locationkit-sys"
 version = "0.1.0"
 dependencies = [
@@ -218,13 +225,6 @@ version = "0.1.5"
 dependencies = [
  "document-features",
  "ohos-sys-opaque-types",
-]
-
-[[package]]
-name = "ohos-qos-sys"
-version = "0.1.0"
-dependencies = [
- "document-features",
 ]
 
 [[package]]
@@ -272,13 +272,13 @@ dependencies = [
  "ohos-ime-sys",
  "ohos-input-sys",
  "ohos-ipckit-sys",
+ "ohos-libqos-sys",
  "ohos-locationkit-sys",
  "ohos-media-sys",
  "ohos-net-ssl-sys",
  "ohos-netmanager-sys",
  "ohos-netstack-sys",
  "ohos-pasteboard-sys",
- "ohos-qos-sys",
  "ohos-rawfile-sys",
  "ohos-rdb-sys",
  "ohos-sensors-sys",

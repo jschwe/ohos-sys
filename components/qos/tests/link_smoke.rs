@@ -1,4 +1,4 @@
-use ohos_qos_sys as qos;
+use ohos_libqos_sys as qos;
 
 #[cfg(feature = "api-12")]
 #[test]
