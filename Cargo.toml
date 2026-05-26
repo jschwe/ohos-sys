@@ -36,6 +36,7 @@ ohos-abilitykit-sys = { version = "0.1.6", optional = true, path = "components/a
 ohos-deviceinfo-sys = { version = "0.1.7", optional = true, path = "components/deviceinfo" }
 ohos-drawing-sys = { path = "components/drawing", version = "0.3.4", optional = true }
 ohos-image-kit-sys = { version = "0.3.6", optional = true, path = "components/multimedia/image_framework" }
+ohos-media-sys = { version = "0.1.1", optional = true, path = "components/multimedia/player_framework" }
 ohos-video-processing-engine-sys = { version = "0.1.0", optional = true, path = "components/multimedia/video_processing_engine" }
 ohos-ime-sys = { version = "0.2.3", optional = true, path = "components/inputmethod" }
 ohaudio-sys = { version = "0.1.0", optional = true, path = "components/ohaudio" }
@@ -110,6 +111,9 @@ net_ssl = ["dep:ohos-net-ssl-sys"]
 netstack = ["dep:ohos-netstack-sys"]
 ## Bindings to the [Image Kit](https://docs.openharmony.cn/pages/v5.0/en/application-dev/media/image/image-overview.md)
 image-kit = ["dep:ohos-image-kit-sys"]
+## Bindings to the Media framework (Player / Recorder / Transcoder, AVCodec,
+## demuxer / muxer, screen capture, low-power AV sinks). Re-exports `ohos-media-sys`.
+media = ["dep:ohos-media-sys"]
 ## Bindings to the VideoProcessingEngine subsystem (GPU-accelerated colour space
 ## conversion, HDR metadata, scaling). Re-exports `ohos-video-processing-engine-sys`.
 ## Use `video-processing-engine-video-processing` / `video-processing-engine-image-processing`
@@ -177,6 +181,7 @@ all-components = [
     "image-kit-image-source",
     "image-kit-picture",
     "image-kit-pixelmap",
+    "media",
     "video-processing-engine",
     "video-processing-engine-video-processing",
     "video-processing-engine-image-processing",
@@ -203,12 +208,13 @@ all-components = [
 #! OpenHarmony versions.
 
 ## No effect. API-10 bindings can't be deselected. The feature exists for internal purposes.
-api-10 = []
+api-10 = ["ohos-media-sys?/api-10"]
 ## Enables bindings for OpenHarmony API-level 11
 api-11 = [
     "api-10",
     "ohos-asset-store-sys?/api-11",
     "ohos-huks-sys?/api-11",
+    "ohos-media-sys?/api-11",
     "hilog-sys?/api-11",
     "hitrace-sys?/api-11",
     "ohos-deviceinfo-sys?/api-11",
@@ -241,6 +247,7 @@ api-12 = [
     "ohos-deviceinfo-sys?/api-12",
     "ohos-drawing-sys?/api-12",
     "ohos-image-kit-sys?/api-12",
+    "ohos-media-sys?/api-12",
     "ohos-video-processing-engine-sys?/api-12",
     "ohos-ime-sys?/api-12",
     "ohos-ipckit-sys?/api-12",
@@ -277,6 +284,7 @@ api-13 = [
     "ohos-deviceinfo-sys?/api-13",
     "ohos-drawing-sys?/api-13",
     "ohos-image-kit-sys?/api-13",
+    "ohos-media-sys?/api-13",
     "ohos-video-processing-engine-sys?/api-13",
     "ohos-ime-sys?/api-13",
     "ohos-ipckit-sys?/api-13",
@@ -313,6 +321,7 @@ api-14 = [
     "ohos-deviceinfo-sys?/api-14",
     "ohos-drawing-sys?/api-14",
     "ohos-image-kit-sys?/api-14",
+    "ohos-media-sys?/api-14",
     "ohos-video-processing-engine-sys?/api-14",
     "ohos-ime-sys?/api-14",
     "ohos-ipckit-sys?/api-14",
@@ -349,6 +358,7 @@ api-15 = [
     "ohos-deviceinfo-sys?/api-15",
     "ohos-drawing-sys?/api-15",
     "ohos-image-kit-sys?/api-15",
+    "ohos-media-sys?/api-15",
     "ohos-video-processing-engine-sys?/api-15",
     "ohos-ime-sys?/api-15",
     "ohos-ipckit-sys?/api-15",
@@ -384,6 +394,7 @@ api-16 = ["api-15",
     "ohos-deviceinfo-sys?/api-16",
     "ohos-drawing-sys?/api-16",
     "ohos-image-kit-sys?/api-16",
+    "ohos-media-sys?/api-16",
     "ohos-video-processing-engine-sys?/api-16",
     "ohos-ime-sys?/api-16",
     "ohos-ipckit-sys?/api-16",
@@ -418,6 +429,7 @@ api-17 = ["api-16",
     "ohos-deviceinfo-sys?/api-17",
     "ohos-drawing-sys?/api-17",
     "ohos-image-kit-sys?/api-17",
+    "ohos-media-sys?/api-17",
     "ohos-video-processing-engine-sys?/api-17",
     "ohos-ime-sys?/api-17",
     "ohos-ipckit-sys?/api-17",
@@ -452,6 +464,7 @@ api-18 = ["api-17",
     "ohos-deviceinfo-sys?/api-18",
     "ohos-drawing-sys?/api-18",
     "ohos-image-kit-sys?/api-18",
+    "ohos-media-sys?/api-18",
     "ohos-video-processing-engine-sys?/api-18",
     "ohos-ime-sys?/api-18",
     "ohos-ipckit-sys?/api-18",
@@ -486,6 +499,7 @@ api-19 = ["api-18",
     "ohos-deviceinfo-sys?/api-19",
     "ohos-drawing-sys?/api-19",
     "ohos-image-kit-sys?/api-19",
+    "ohos-media-sys?/api-19",
     "ohos-video-processing-engine-sys?/api-19",
     "ohos-ime-sys?/api-19",
     "ohos-ipckit-sys?/api-19",
@@ -520,6 +534,7 @@ api-20 = ["api-19",
     "ohos-deviceinfo-sys?/api-20",
     "ohos-drawing-sys?/api-20",
     "ohos-image-kit-sys?/api-20",
+    "ohos-media-sys?/api-20",
     "ohos-video-processing-engine-sys?/api-20",
     "ohos-ime-sys?/api-20",
     "ohos-ipckit-sys?/api-20",
@@ -554,6 +569,7 @@ api-21 = ["api-20",
     "ohos-deviceinfo-sys?/api-21",
     "ohos-drawing-sys?/api-21",
     "ohos-image-kit-sys?/api-21",
+    "ohos-media-sys?/api-21",
     "ohos-video-processing-engine-sys?/api-21",
     "ohos-ime-sys?/api-21",
     "ohos-ipckit-sys?/api-21",
@@ -588,6 +604,7 @@ api-22 = ["api-21",
     "ohos-deviceinfo-sys?/api-22",
     "ohos-drawing-sys?/api-22",
     "ohos-image-kit-sys?/api-22",
+    "ohos-media-sys?/api-22",
     "ohos-video-processing-engine-sys?/api-22",
     "ohos-ime-sys?/api-22",
     "ohos-ipckit-sys?/api-22",
@@ -622,6 +639,7 @@ api-23 = ["api-22",
     "ohos-deviceinfo-sys?/api-23",
     "ohos-drawing-sys?/api-23",
     "ohos-image-kit-sys?/api-23",
+    "ohos-media-sys?/api-23",
     "ohos-video-processing-engine-sys?/api-23",
     "ohos-ime-sys?/api-23",
     "ohos-ipckit-sys?/api-23",
