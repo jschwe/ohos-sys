@@ -696,9 +696,11 @@ pub(crate) fn get_module_bindings_config() -> Vec<DirBindingsConf> {
                     "native_interface_focus" => builder
                         .raw_line("#[cfg(feature =\"api-15\")]")
                         .raw_line("use ohos_sys_opaque_types::ArkUI_ContextHandle;"),
-                    "drawable_descriptor" => {
-                        builder.raw_line("pub use ohos_sys_opaque_types::OH_PixelmapNative;")
-                    }
+                    "drawable_descriptor" => builder
+                        .raw_line("pub use ohos_sys_opaque_types::OH_PixelmapNative;")
+                        .raw_line(
+                            "#[cfg(feature = \"api-12\")]\npub use ohos_sys_opaque_types::ArkUI_DrawableDescriptor;",
+                        ),
                     "native_dialog" => builder
                         .no_debug("ArkUI_NativeDialogAPI_.*")
                         .no_copy("ArkUI_NativeDialogAPI_.*")

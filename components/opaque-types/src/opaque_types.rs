@@ -158,6 +158,10 @@ pub struct ArkUI_Node {
 }
 pub type ArkUI_NodeHandle = *mut ArkUI_Node;
 #[repr(C)]
+pub struct ArkUI_DrawableDescriptor {
+    _unused: [u8; 0],
+}
+#[repr(C)]
 pub struct ArkUI_Context {
     _unused: [u8; 0],
 }

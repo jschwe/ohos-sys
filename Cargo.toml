@@ -20,11 +20,11 @@ members = [
 exclude = ["components/multimedia", "scripts"]
 
 [workspace.dependencies]
-ohos-sys-opaque-types = { version = "0.1.10", path = "components/opaque-types" }
+ohos-sys-opaque-types = { version = "0.1.11", path = "components/opaque-types" }
 
 [dependencies]
 document-features = { version = "0.2", optional = true }
-arkui-sys = { version = "0.3.4", optional = true, path = "components/arkui" }
+arkui-sys = { version = "0.3.5", optional = true, path = "components/arkui" }
 ohos-accesstoken-sys = { version = "0.1.1", optional = true, path = "components/accesstoken" }
 ohos-asset-store-sys = { version = "0.1.1", optional = true, path = "components/asset" }
 ohos-basic-services-kit-sys = { version = "0.1.0", optional = true, path = "components/basic-services-kit" }
