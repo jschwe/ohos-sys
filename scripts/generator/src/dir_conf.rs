@@ -1184,6 +1184,42 @@ pub(crate) fn get_module_bindings_config() -> Vec<DirBindingsConf> {
             ..Default::default()
         },
         DirBindingsConf {
+            directory: "bundle".to_string(),
+            output_dir: "components/bundle/src".to_string(),
+            rename_output_file: None,
+            set_builder_opts: Box::new(|file_stem, header_path, builder| {
+                let builder = builder
+                    .allowlist_file(header_path.to_str().unwrap())
+                    .clang_args(["-include", "stdbool.h"]);
+                match file_stem {
+                    "ability_resource_info" => builder
+                        .raw_line(
+                            "use crate::bundle_manager_common::BundleManager_ErrorCode;",
+                        )
+                        .raw_line(
+                            "use ohos_sys_opaque_types::ArkUI_DrawableDescriptor;",
+                        )
+                        // `allowlist_recursively(false)` would otherwise drop this
+                        // function because `ArkUI_DrawableDescriptor` is defined in a
+                        // sibling header (`arkui/drawable_descriptor.h`).
+                        .allowlist_function("OH_NativeBundle_GetDrawableDescriptor"),
+                    "native_interface_bundle" => builder
+                        .raw_line(
+                            "#[cfg(feature = \"api-21\")]\nuse crate::ability_resource_info::OH_NativeBundle_AbilityResourceInfo;",
+                        )
+                        .raw_line(
+                            "#[cfg(feature = \"api-21\")]\nuse crate::bundle_manager_common::BundleManager_ErrorCode;",
+                        )
+                        // `allowlist_recursively(false)` would otherwise drop this api-21
+                        // function because its parameter types are declared in sibling
+                        // headers (`ability_resource_info.h` / `bundle_manager_common.h`).
+                        .allowlist_function("OH_NativeBundle_GetAbilityResourceInfo"),
+                    _ => builder,
+                }
+            }),
+            ..Default::default()
+        },
+        DirBindingsConf {
             directory: "BasicServicesKit".to_string(),
             output_dir: "components/basic-services-kit/src".to_string(),
             rename_output_file: Some(Box::new(|stem| {

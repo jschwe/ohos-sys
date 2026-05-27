@@ -48,6 +48,7 @@ ohos-net-ssl-sys = { version = "0.1.1", optional = true, path = "components/net_
 ohos-netstack-sys = { version = "0.1.1", optional = true, path = "components/netstack" }
 ohos-input-sys = { version = "0.3.4", optional = true, path = "components/multimodal-input" }
 ohos-pasteboard-sys = { version = "0.1.5", optional = true, path = "components/pasteboard" }
+ohos-libbundle-sys = { version = "0.1.0", optional = true, path = "components/bundle" }
 ohos-libqos-sys = { version = "0.1.0", optional = true, path = "components/qos" }
 ohos-rawfile-sys = { version = "0.1.4", optional = true, path = "components/rawfile" }
 ohos-rdb-sys = { version = "0.1.0", optional = true, path = "components/rdb" }
@@ -134,6 +135,10 @@ native_buffer = ['dep:ohos-window-sys']
 native_image = ['dep:ohos-window-sys']
 ## Enables bindings to `native_window`
 native_window = ['dep:ohos-window-sys']
+## Enables bindings to the BundleManager (native bundle) NDK. The base
+## surface is available from API-9 (always-on); later APIs gate on `api-11`,
+## `api-13`, `api-14`, `api-20`, and `api-21`.
+bundle = ['dep:ohos-libbundle-sys']
 ## Enables to the ohos pasteboard (clipboard)
 pasteboard = ['dep:ohos-pasteboard-sys']
 ## Enables bindings to the QoS thread scheduling APIs (and at api-20+ the Gewu
@@ -167,6 +172,7 @@ all-components = [
     "basic-services-kit-scan",
     "basic-services-kit-os-account",
     "basic-services-kit-time-service",
+    "bundle",
     "crypto",
     "huks",
     "deviceinfo",
@@ -213,11 +219,15 @@ all-components = [
 #! OpenHarmony versions.
 
 ## No effect. API-10 bindings can't be deselected. The feature exists for internal purposes.
-api-10 = ["ohos-media-sys?/api-10"]
+api-10 = [
+    "ohos-libbundle-sys?/api-10",
+    "ohos-media-sys?/api-10",
+]
 ## Enables bindings for OpenHarmony API-level 11
 api-11 = [
     "api-10",
     "ohos-asset-store-sys?/api-11",
+    "ohos-libbundle-sys?/api-11",
     "ohos-huks-sys?/api-11",
     "ohos-media-sys?/api-11",
     "hilog-sys?/api-11",
@@ -264,6 +274,7 @@ api-12 = [
     "ohaudio-sys?/api-12",
     "arkweb-sys?/api-12",
     "ohos-pasteboard-sys?/api-12",
+    "ohos-libbundle-sys?/api-12",
     "ohos-libqos-sys?/api-12",
     "ohos-rawfile-sys?/api-12",
     "ohos-rdb-sys?/api-12",
@@ -302,6 +313,7 @@ api-13 = [
     "ohaudio-sys?/api-13",
     "arkweb-sys?/api-13",
     "ohos-pasteboard-sys?/api-13",
+    "ohos-libbundle-sys?/api-13",
     "ohos-libqos-sys?/api-13",
     "ohos-rawfile-sys?/api-13",
     "ohos-rdb-sys?/api-13",
@@ -340,6 +352,7 @@ api-14 = [
     "ohaudio-sys?/api-14",
     "arkweb-sys?/api-14",
     "ohos-pasteboard-sys?/api-14",
+    "ohos-libbundle-sys?/api-14",
     "ohos-libqos-sys?/api-14",
     "ohos-rawfile-sys?/api-14",
     "ohos-rdb-sys?/api-14",
@@ -378,6 +391,7 @@ api-15 = [
     "ohaudio-sys?/api-15",
     "arkweb-sys?/api-15",
     "ohos-pasteboard-sys?/api-15",
+    "ohos-libbundle-sys?/api-15",
     "ohos-libqos-sys?/api-15",
     "ohos-rawfile-sys?/api-15",
     "ohos-rdb-sys?/api-15",
@@ -415,6 +429,7 @@ api-16 = ["api-15",
     "ohaudio-sys?/api-16",
     "arkweb-sys?/api-16",
     "ohos-pasteboard-sys?/api-16",
+    "ohos-libbundle-sys?/api-16",
     "ohos-libqos-sys?/api-16",
     "ohos-rawfile-sys?/api-16",
     "ohos-rdb-sys?/api-16",
@@ -451,6 +466,7 @@ api-17 = ["api-16",
     "ohaudio-sys?/api-17",
     "arkweb-sys?/api-17",
     "ohos-pasteboard-sys?/api-17",
+    "ohos-libbundle-sys?/api-17",
     "ohos-libqos-sys?/api-17",
     "ohos-rawfile-sys?/api-17",
     "ohos-rdb-sys?/api-17",
@@ -487,6 +503,7 @@ api-18 = ["api-17",
     "ohaudio-sys?/api-18",
     "arkweb-sys?/api-18",
     "ohos-pasteboard-sys?/api-18",
+    "ohos-libbundle-sys?/api-18",
     "ohos-libqos-sys?/api-18",
     "ohos-rawfile-sys?/api-18",
     "ohos-rdb-sys?/api-18",
@@ -523,6 +540,7 @@ api-19 = ["api-18",
     "ohaudio-sys?/api-19",
     "arkweb-sys?/api-19",
     "ohos-pasteboard-sys?/api-19",
+    "ohos-libbundle-sys?/api-19",
     "ohos-libqos-sys?/api-19",
     "ohos-rawfile-sys?/api-19",
     "ohos-rdb-sys?/api-19",
@@ -559,6 +577,7 @@ api-20 = ["api-19",
     "ohaudio-sys?/api-20",
     "arkweb-sys?/api-20",
     "ohos-pasteboard-sys?/api-20",
+    "ohos-libbundle-sys?/api-20",
     "ohos-libqos-sys?/api-20",
     "ohos-rawfile-sys?/api-20",
     "ohos-rdb-sys?/api-20",
@@ -595,6 +614,7 @@ api-21 = ["api-20",
     "ohaudio-sys?/api-21",
     "arkweb-sys?/api-21",
     "ohos-pasteboard-sys?/api-21",
+    "ohos-libbundle-sys?/api-21",
     "ohos-libqos-sys?/api-21",
     "ohos-rawfile-sys?/api-21",
     "ohos-rdb-sys?/api-21",
@@ -631,6 +651,7 @@ api-22 = ["api-21",
     "ohaudio-sys?/api-22",
     "arkweb-sys?/api-22",
     "ohos-pasteboard-sys?/api-22",
+    "ohos-libbundle-sys?/api-22",
     "ohos-libqos-sys?/api-22",
     "ohos-rawfile-sys?/api-22",
     "ohos-rdb-sys?/api-22",
@@ -667,6 +688,7 @@ api-23 = ["api-22",
     "ohaudio-sys?/api-23",
     "arkweb-sys?/api-23",
     "ohos-pasteboard-sys?/api-23",
+    "ohos-libbundle-sys?/api-23",
     "ohos-libqos-sys?/api-23",
     "ohos-rawfile-sys?/api-23",
     "ohos-rdb-sys?/api-23",

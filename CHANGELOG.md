@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+### Added
+
+- `bundle` — `ohos-libbundle-sys` (BundleManager / native bundle NDK,
+  `libbundle_ndk.z.so`): application identity (`bundleName`, `appId`,
+  `appIdentifier`, fingerprint, compatible device type, debug-mode flag),
+  main-element discovery, module metadata, and the API-21 file-type intent
+  discovery flow (`OH_NativeBundle_GetAbilityResourceInfo`).
+
+### Changed 
+
 - xcomponent 0.4.0: the `keyboard-types` feature now covers the full key-event
   translation (`Code`, `NamedKey`, `Location`, US-layout characters and a
   stateful `KeyEventConverter`), and linking `ace_ndk.z` is limited to
