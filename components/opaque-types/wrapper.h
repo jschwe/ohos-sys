@@ -19,5 +19,6 @@
 #include "database/data/oh_data_values.h"
 #include "database/data/oh_data_values_buckets.h"
 #include "arkui/drag_and_drop.h"
+#include "arkui/drawable_descriptor.h"
 #include "ace/xcomponent/native_interface_xcomponent.h"
 #include "native_drawing/drawing_text_declaration.h"

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.5
+
+- `ArkUI_DrawableDescriptor` is now re-exported from `ohos-sys-opaque-types`.
+  The public path `arkui_sys::drawable_descriptor::ArkUI_DrawableDescriptor` is
+  unchanged.
+
 ## 0.3.4
 
 - Add API-22 and API-23 bindings. Significant additions across `native_node`, `native_type`,
