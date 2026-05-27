@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "arkui-sys"
-version = "0.3.4"
+version = "0.3.5"
 dependencies = [
  "document-features",
  "ohos-drawing-sys",
@@ -177,6 +177,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "ohos-libbundle-sys"
+version = "0.1.0"
+dependencies = [
+ "document-features",
+ "ohos-sys-opaque-types",
+]
+
+[[package]]
 name = "ohos-libqos-sys"
 version = "0.1.0"
 dependencies = [
@@ -273,6 +281,7 @@ dependencies = [
  "ohos-ime-sys",
  "ohos-input-sys",
  "ohos-ipckit-sys",
+ "ohos-libbundle-sys",
  "ohos-libqos-sys",
  "ohos-locationkit-sys",
  "ohos-media-sys",
@@ -294,7 +303,7 @@ dependencies = [
 
 [[package]]
 name = "ohos-sys-opaque-types"
-version = "0.1.10"
+version = "0.1.11"
 
 [[package]]
 name = "ohos-video-processing-engine-sys"

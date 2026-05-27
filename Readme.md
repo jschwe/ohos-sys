@@ -27,7 +27,7 @@ already been generated.
 | ark_runtime                             |        |           |                           |
 | arkui                                   | ✅      | 23        | [arkui-sys]               |
 | asset                                   | ✅      | 23        | [ohos-asset-store-sys]    |
-| bundle                                  |        |           |                           |
+| bundle                                  | ✅      | 23        | [ohos-libbundle-sys]      |
 | database                                | ✅      | 23        | [ohos-rdb-sys]            |
 | ddk                                     |        |           |                           |
 | distributedhardware                     |        |           |                           |
@@ -105,6 +105,7 @@ already been generated.
 [arkweb-sys]: https://docs.rs/arkweb-sys/latest/arkweb_sys/
 [ohos-abilitykit-sys]: https://docs.rs/ohos-abilitykit-sys/latest/ohos_abilitykit_sys/
 [ohos-vsync-sys]: https://docs.rs/ohos-vsync-sys/latest/ohos_vsync_sys/
+[ohos-libbundle-sys]: https://docs.rs/ohos-libbundle-sys/latest/ohos_libbundle_sys/
 [ohos-libqos-sys]: https://docs.rs/ohos-libqos-sys/latest/ohos_libqos_sys/
 [udmf-sys]: https://docs.rs/udmf-sys/latest/udmf_sys/
 [ohos-sensors-sys]: https://docs.rs/ohos-sensors-sys/latest/ohos_sensors_sys/
