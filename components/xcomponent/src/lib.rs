@@ -24,6 +24,7 @@
 )]
 #![cfg_attr(docsrs, feature(doc_cfg))]
 
+#[cfg(target_env = "ohos")]
 #[link(name = "ace_ndk.z")]
 extern "C" {}
 
