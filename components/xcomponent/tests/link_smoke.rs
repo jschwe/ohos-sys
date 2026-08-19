@@ -1,3 +1,6 @@
+// The referenced symbols only resolve against the OpenHarmony SDK sysroot.
+#![cfg(target_env = "ohos")]
+
 use std::ptr;
 
 use xcomponent_sys as xcomponent;
