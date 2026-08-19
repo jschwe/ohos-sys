@@ -16,6 +16,14 @@ jobs:
       - run: cargo fmt --check
       - run: cargo clippy
 
+  host-tests:
+    name: Host tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test -p xcomponent-sys --features keyboard-types
+
   integrity:
     name: Integrity Test
     runs-on: ubuntu-latest
