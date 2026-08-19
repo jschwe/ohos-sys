@@ -105,7 +105,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -136,7 +136,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -166,7 +166,7 @@ extern "C" {
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
     ///
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] component is nullptr or callback is nullptr,
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) component is nullptr or callback is nullptr,
     /// or the type of node is not XComponent.
     ///
     ///
@@ -196,7 +196,7 @@ extern "C" {
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
     ///
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] component is nullptr or the type of node is not XComponent.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) component is nullptr or the type of node is not XComponent.
     ///
     ///
     /// Available since API-level: 18

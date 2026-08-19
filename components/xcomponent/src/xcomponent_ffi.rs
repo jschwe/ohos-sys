@@ -1191,7 +1191,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -1216,7 +1216,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -1427,7 +1427,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -1450,7 +1450,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -1473,7 +1473,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -1496,7 +1496,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -1760,7 +1760,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 19
     #[cfg(feature = "api-19")]
@@ -1876,7 +1876,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 19
     #[cfg(feature = "api-19")]
@@ -1898,7 +1898,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 19
     #[cfg(feature = "api-19")]
@@ -1938,7 +1938,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if the node is invalid.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if the node is invalid.
     ///
     /// Available since API-level: 19
     #[cfg(feature = "api-19")]
@@ -1957,8 +1957,8 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if the node is invalid.
-    /// [`ARKUI_ERROR_CODE_XCOMPONENT_STATE_INVALID`] if the node has initialized.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if the node is invalid.
+    /// [`ARKUI_ERROR_CODE_XCOMPONENT_STATE_INVALID`](arkui_sys::native_type::ArkUiErrorCode::XCOMPONENT_STATE_INVALID) if the node has initialized.
     ///
     /// Available since API-level: 19
     #[cfg(feature = "api-19")]
@@ -1974,8 +1974,8 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if the node is invalid.
-    /// [`ARKUI_ERROR_CODE_XCOMPONENT_STATE_INVALID`] if the node has finalized.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if the node is invalid.
+    /// [`ARKUI_ERROR_CODE_XCOMPONENT_STATE_INVALID`](arkui_sys::native_type::ArkUiErrorCode::XCOMPONENT_STATE_INVALID) if the node has finalized.
     ///
     /// Available since API-level: 19
     #[cfg(feature = "api-19")]
@@ -1993,7 +1993,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if the node is invalid.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if the node is invalid.
     ///
     /// Available since API-level: 19
     #[cfg(feature = "api-19")]
@@ -2014,7 +2014,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -2037,7 +2037,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -2060,7 +2060,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     ///
@@ -2080,7 +2080,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     #[cfg(feature = "api-20")]
@@ -2199,7 +2199,7 @@ extern "C" {
     ///
     /// * Returns the status code of the execution.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] the execution is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](arkui_sys::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]

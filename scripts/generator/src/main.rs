@@ -1,4 +1,5 @@
 mod dir_conf;
+mod doc_links;
 mod enum_prefix;
 mod header_conf;
 mod opaque_types;
@@ -574,9 +575,11 @@ fn generate_bindings(sdk_native_dir: &Path, api_version: u32) -> anyhow::Result<
         let builder = (binding.set_builder_opts)(builder);
         let bindings = builder.generate().context("Bindgen failed")?;
 
+        let out_path = root_dir.join(format!("{}_ffi.rs", binding.output_prefix));
         bindings
-            .write_to_file(root_dir.join(format!("{}_ffi.rs", binding.output_prefix)))
+            .write_to_file(&out_path)
             .context("Failed to write bindings to file")?;
+        rewrite_xcomponent_doc_links_if_needed(&out_path)?;
     }
 
     for binding in &get_module_bindings_config() {
@@ -658,12 +661,29 @@ fn generate_bindings(sdk_native_dir: &Path, api_version: u32) -> anyhow::Result<
                     .context("Failed to create target directory for bindings")?;
             }
 
+            let out_path = base_path.join(format!("{file_stem}_ffi.rs"));
             bindings
-                .write_to_file(base_path.join(format!("{file_stem}_ffi.rs")))
+                .write_to_file(&out_path)
                 .context("Failed to write bindings to file")?;
+            rewrite_xcomponent_doc_links_if_needed(&out_path)?;
         }
     }
 
+    Ok(())
+}
+
+/// Rewrite `ARKUI_ERROR_CODE_*` intra-doc links in generated xcomponent files
+/// to `arkui_sys::native_type::ArkUiErrorCode::*`. No-op for other crates.
+fn rewrite_xcomponent_doc_links_if_needed(path: &Path) -> anyhow::Result<()> {
+    let is_xcomponent = path.components().any(|c| c.as_os_str() == "xcomponent");
+    if is_xcomponent {
+        doc_links::rewrite_generated_file(path).with_context(|| {
+            format!(
+                "Failed to rewrite xcomponent doc links in {}",
+                path.display()
+            )
+        })?;
+    }
     Ok(())
 }
 

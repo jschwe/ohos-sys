@@ -1,4 +1,5 @@
 use crate::dir_conf::ResultEnumParseCallbacks;
+use crate::doc_links::XcomponentDocLinkCb;
 use crate::BindingConf;
 use bindgen::EnumVariation;
 
@@ -77,6 +78,7 @@ pub(crate) fn get_bindings_config(_api_version: u32) -> Vec<BindingConf> {
                     .raw_line("use ohos_sys_opaque_types::{ArkUI_NodeHandle,OHNativeWindow};")
                     .raw_line("#[cfg(feature = \"api-22\")]")
                     .raw_line("use ohos_sys_opaque_types::ArkUI_XComponentSurfaceConfig;")
+                    .parse_callbacks(Box::new(XcomponentDocLinkCb))
                     .clang_args(&["-x", "c++"])
             }),
         },
@@ -107,6 +109,7 @@ pub(crate) fn get_bindings_config(_api_version: u32) -> Vec<BindingConf> {
                     // block all types except this one.
                     .blocklist_type("?!(ArkUI_XComponent_ImageAnalyzerState)")
                     .allowlist_type("ArkUI_XComponent_ImageAnalyzerState")
+                    .parse_callbacks(Box::new(XcomponentDocLinkCb))
                     .clang_args(&["-x", "c++"])
             }),
         },
