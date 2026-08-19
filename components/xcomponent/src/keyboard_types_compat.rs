@@ -7,6 +7,7 @@
 //! for US layout here (Note: This will move to an abstraction crate in the future)
 
 use std::collections::HashSet;
+use std::hash::{BuildHasherDefault, DefaultHasher};
 
 use crate::{OH_NativeXComponent_KeyAction, OH_NativeXComponent_KeyCode};
 use keyboard_types::{Code, Key, KeyState, KeyboardEvent, Location, Modifiers, NamedKey};
@@ -544,7 +545,8 @@ pub struct ModifierState {
 ///
 /// The state tracks which key codes are down (to derive `repeat`) and the Meta
 /// keys (used when [`ModifierState::meta`] is `None`). Feed it every key event
-/// of one physical keyboard, in order. Returns `None` for an unknown key
+/// of one physical keyboard, in order, and reset it with
+/// [`clear`](Self::clear) on focus loss. Returns `None` for an unknown key
 /// action.
 ///
 /// Note: this stateful helper logically belongs in a safe XComponent wrapper
@@ -573,14 +575,25 @@ pub struct ModifierState {
 /// ```
 #[derive(Clone, Debug, Default)]
 pub struct KeyEventConverter {
-    pressed: HashSet<OH_NativeXComponent_KeyCode>,
+    pressed: HashSet<OH_NativeXComponent_KeyCode, BuildHasherDefault<DefaultHasher>>,
     meta_left: bool,
     meta_right: bool,
 }
 
 impl KeyEventConverter {
-    pub fn new() -> Self {
-        Self::default()
+    pub const fn new() -> Self {
+        Self {
+            pressed: HashSet::with_hasher(BuildHasherDefault::new()),
+            meta_left: false,
+            meta_right: false,
+        }
+    }
+
+    /// Reset all tracked key state.
+    pub fn clear(&mut self) {
+        self.pressed.clear();
+        self.meta_left = false;
+        self.meta_right = false;
     }
 
     pub fn convert(

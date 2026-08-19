@@ -317,6 +317,32 @@ fn space_types_a_character() {
 }
 
 #[test]
+fn clear_resets_tracked_state() {
+    let mut converter = KeyEventConverter::new();
+    let plain = ModifierState::default();
+    down(&mut converter, OH_KeyCode::KEY_META_LEFT, plain);
+    assert!(down(&mut converter, OH_KeyCode::KEY_A, plain)
+        .modifiers
+        .contains(Modifiers::META));
+    converter.clear();
+    let event = down(&mut converter, OH_KeyCode::KEY_A, plain);
+    assert!(!event.repeat);
+    assert!(!event.modifiers.contains(Modifiers::META));
+}
+
+#[test]
+fn converter_is_const_constructible() {
+    static CONVERTER: std::sync::Mutex<KeyEventConverter> =
+        std::sync::Mutex::new(KeyEventConverter::new());
+    let event = down(
+        &mut CONVERTER.lock().unwrap(),
+        OH_KeyCode::KEY_A,
+        ModifierState::default(),
+    );
+    assert_eq!(event.key, character("a"));
+}
+
+#[test]
 fn unknown_action_returns_none() {
     let mut converter = KeyEventConverter::new();
     assert!(converter

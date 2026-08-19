@@ -6,6 +6,7 @@
   translation (`Code`, `NamedKey`, `Location`, US-layout characters and a
   stateful `KeyEventConverter`), and linking `ace_ndk.z` is limited to
   OpenHarmony targets so the crate's tests run on the host.
+  The crate MSRV is raised to 1.85.
 
 ## v0.9.0
 
