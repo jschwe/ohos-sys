@@ -1,4 +1,5 @@
 mod dir_conf;
+mod doc_links;
 mod enum_prefix;
 mod header_conf;
 mod opaque_types;
@@ -384,7 +385,10 @@ impl bindgen::callbacks::ParseCallbacks for DoxygenCommentCb {
         }
         // Replace manual linebreaks in doxygen with double linebreaks for markdown.
         let comment = comment.replace("\\n", "\n");
-        Some(doxygen_rs::transform(comment.trim_end_matches("\n")))
+        let comment = doxygen_rs::transform(comment.trim_end_matches("\n"));
+        // `{@link C_IDENT}` becomes `` [`C_IDENT`] ``; rewrite known renamed
+        // enum variants to rustdoc markdown links (ohos-sys#123).
+        Some(doc_links::rewrite_enum_variant_links(&comment))
     }
 
     fn parse_comments_for_attributes(&self, comment: &str) -> Vec<CodeGenAttributes> {

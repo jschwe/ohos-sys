@@ -607,7 +607,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -996,7 +996,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 17
     #[cfg(feature = "api-17")]
@@ -1063,7 +1063,7 @@ extern "C" {
     ///
     /// * Result code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -1092,7 +1092,7 @@ extern "C" {
     ///
     /// * Result code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -1706,8 +1706,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_BUFFER_SIZE_NOT_ENOUGH`] if the giving buffer is not enough.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_BUFFER_SIZE_NOT_ENOUGH`](crate::native_type::ArkUiErrorCode::BUFFER_SIZE_NOT_ENOUGH) if the giving buffer is not enough.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 14
     #[cfg(feature = "api-14")]
@@ -1746,7 +1746,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -1877,7 +1877,7 @@ extern "C" {
     ///
     /// * Result code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 17
     #[cfg(feature = "api-17")]
@@ -1957,7 +1957,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR`] if the given buffer size is insufficient.
+    /// Returns [`ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR`](crate::native_type::ArkUiErrorCode::BUFFER_SIZE_ERROR) if the given buffer size is insufficient.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -1997,7 +1997,7 @@ extern "C" {
     ///
     /// * Result code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 17
     #[cfg(feature = "api-17")]
@@ -2033,7 +2033,7 @@ extern "C" {
     ///
     /// * Result code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -2052,8 +2052,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`] if the input event pointer is not a
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`](crate::native_type::ArkUiErrorCode::NOT_CLONED_POINTER_EVENT) if the input event pointer is not a
     /// cloned event pointer.
     ///
     /// Available since API-level: 15
@@ -2074,8 +2074,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`] if the input event pointer is not a
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`](crate::native_type::ArkUiErrorCode::NOT_CLONED_POINTER_EVENT) if the input event pointer is not a
     /// cloned event pointer.
     ///
     /// Available since API-level: 15
@@ -2103,8 +2103,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`] if the input event pointer is not a
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`](crate::native_type::ArkUiErrorCode::NOT_CLONED_POINTER_EVENT) if the input event pointer is not a
     /// cloned event pointer.
     ///
     /// Available since API-level: 15
@@ -2128,8 +2128,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`] if the input event pointer is not a
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`](crate::native_type::ArkUiErrorCode::NOT_CLONED_POINTER_EVENT) if the input event pointer is not a
     /// cloned event pointer.
     ///
     /// Available since API-level: 15
@@ -2151,8 +2151,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`] if the input event pointer is not a
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`](crate::native_type::ArkUiErrorCode::NOT_CLONED_POINTER_EVENT) if the input event pointer is not a
     /// cloned event pointer.
     ///
     /// Available since API-level: 15
@@ -2176,8 +2176,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`] if the input event pointer is not a
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`](crate::native_type::ArkUiErrorCode::NOT_CLONED_POINTER_EVENT) if the input event pointer is not a
     /// cloned event pointer.
     ///
     /// Available since API-level: 15
@@ -2200,12 +2200,12 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`] if the input event pointer is not a
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_CLONED_POINTER_EVENT`](crate::native_type::ArkUiErrorCode::NOT_CLONED_POINTER_EVENT) if the input event pointer is not a
     /// cloned event pointer.
-    /// Returns [`ARKUI_ERROR_CODE_POST_CLONED_COMPONENT_STATUS_ABNORMAL`]
+    /// Returns [`ARKUI_ERROR_CODE_POST_CLONED_COMPONENT_STATUS_ABNORMAL`](crate::native_type::ArkUiErrorCode::POST_CLONED_COMPONENT_STATUS_ABNORMAL)
     /// if the component status abnormal.
-    /// Returns [`ARKUI_ERROR_CODE_POST_CLONED_NO_COMPONENT_HIT_TO_RESPOND_TO_THE_EVENT`]
+    /// Returns [`ARKUI_ERROR_CODE_POST_CLONED_NO_COMPONENT_HIT_TO_RESPOND_TO_THE_EVENT`](crate::native_type::ArkUiErrorCode::POST_CLONED_NO_COMPONENT_HIT_TO_RESPOND_TO_THE_EVENT)
     /// if no component hit to response to the event.
     ///
     /// Available since API-level: 15
@@ -2331,7 +2331,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -2353,7 +2353,7 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if success.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter exception occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter exception occurs.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -2474,7 +2474,7 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if success.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter exception occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter exception occurs.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -2496,8 +2496,8 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if success.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter exception occurs.
-    /// Returns [`ARKUI_ERROR_CODE_BUFFER_SIZE_NOT_ENOUGH`] if the buffer is not large enough.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter exception occurs.
+    /// Returns [`ARKUI_ERROR_CODE_BUFFER_SIZE_NOT_ENOUGH`](crate::native_type::ArkUiErrorCode::BUFFER_SIZE_NOT_ENOUGH) if the buffer is not large enough.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -2518,7 +2518,7 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if success.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter exception occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter exception occurs.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -2538,7 +2538,7 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if success.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter exception occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter exception occurs.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]

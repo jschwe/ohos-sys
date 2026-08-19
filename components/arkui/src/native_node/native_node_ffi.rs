@@ -12930,10 +12930,10 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`] if the following operations are not allowed on
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`](crate::native_type::ArkUiErrorCode::ARKTS_NODE_NOT_SUPPORTED) if the following operations are not allowed on
     /// BuilderNode generated nodes: setting or resetting attributes, setting events, or adding or editing subnodes.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`] if the child node has already been adopted. Add since api 22.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`](crate::native_type::ArkUiErrorCode::NODE_IS_ADOPTED) if the child node has already been adopted. Add since api 22.
     ///
     /// Available since API-level: 12
     pub addChild: ::core::option::Option<
@@ -12951,8 +12951,8 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`] if the following operations are not allowed
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`](crate::native_type::ArkUiErrorCode::ARKTS_NODE_NOT_SUPPORTED) if the following operations are not allowed
     /// on BuilderNode generated nodes:
     /// setting or resetting attributes, setting events, or adding or editing subnodes.
     ///
@@ -12975,10 +12975,10 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`] if the following operations are not allowed on BuilderNode generated
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`](crate::native_type::ArkUiErrorCode::ARKTS_NODE_NOT_SUPPORTED) if the following operations are not allowed on BuilderNode generated
     /// nodes: setting or resetting attributes, setting events, or adding or editing subnodes.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`] if the child node has already been adopted. Add since api 22.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`](crate::native_type::ArkUiErrorCode::NODE_IS_ADOPTED) if the child node has already been adopted. Add since api 22.
     ///
     /// Available since API-level: 12
     pub insertChildAfter: ::core::option::Option<
@@ -13003,10 +13003,10 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`] if the following operations are not allowed on BuilderNode generated
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`](crate::native_type::ArkUiErrorCode::ARKTS_NODE_NOT_SUPPORTED) if the following operations are not allowed on BuilderNode generated
     /// nodes: setting or resetting attributes, setting events, or adding or editing subnodes.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`] if the child node has already been adopted. Add since api 22.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`](crate::native_type::ArkUiErrorCode::NODE_IS_ADOPTED) if the child node has already been adopted. Add since api 22.
     ///
     /// Available since API-level: 12
     pub insertChildBefore: ::core::option::Option<
@@ -13031,10 +13031,10 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`] if the following operations are not allowed on BuilderNode generated
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`](crate::native_type::ArkUiErrorCode::ARKTS_NODE_NOT_SUPPORTED) if the following operations are not allowed on BuilderNode generated
     /// nodes: setting or resetting attributes, setting events, or adding or editing subnodes.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`] if the child node has already been adopted. Add since api 22.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`](crate::native_type::ArkUiErrorCode::NODE_IS_ADOPTED) if the child node has already been adopted. Add since api 22.
     ///
     /// Available since API-level: 12
     pub insertChildAt: ::core::option::Option<
@@ -13058,10 +13058,10 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`] if the dynamic implementation library
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`](crate::native_type::ArkUiErrorCode::ATTRIBUTE_OR_EVENT_NOT_SUPPORTED) if the dynamic implementation library
     /// of the native API was not found.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`] if the following operations are not allowed
+    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`](crate::native_type::ArkUiErrorCode::ARKTS_NODE_NOT_SUPPORTED) if the following operations are not allowed
     /// on BuilderNode generated nodes:
     /// setting or resetting attributes, setting events, or adding or editing subnodes.
     ///
@@ -13107,10 +13107,10 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`] if the dynamic implementation library
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`](crate::native_type::ArkUiErrorCode::ATTRIBUTE_OR_EVENT_NOT_SUPPORTED) if the dynamic implementation library
     /// of the native API was not found.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`] if the following operations are not allowed
+    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`](crate::native_type::ArkUiErrorCode::ARKTS_NODE_NOT_SUPPORTED) if the following operations are not allowed
     /// on BuilderNode generated nodes:
     /// setting or resetting attributes, setting events, or adding or editing subnodes.
     ///
@@ -13137,10 +13137,10 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`] if the dynamic implementation library
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`](crate::native_type::ArkUiErrorCode::ATTRIBUTE_OR_EVENT_NOT_SUPPORTED) if the dynamic implementation library
     /// of the native API was not found.
-    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`] if the following operations are not allowed
+    /// Returns [`ARKUI_ERROR_CODE_NOT_SUPPROTED_FOR_ARKTS_NODE`](crate::native_type::ArkUiErrorCode::ARKTS_NODE_NOT_SUPPORTED) if the following operations are not allowed
     /// on BuilderNode generated nodes:
     /// setting or resetting attributes, setting events, or adding or editing subnodes.
     ///
@@ -13309,8 +13309,8 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`] if the dynamic implementation library
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`](crate::native_type::ArkUiErrorCode::ATTRIBUTE_OR_EVENT_NOT_SUPPORTED) if the dynamic implementation library
     /// of the native API was not found.
     ///
     /// Available since API-level: 12
@@ -13377,7 +13377,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub setMeasuredSize: ::core::option::Option<
@@ -13397,7 +13397,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub setLayoutPosition: ::core::option::Option<
@@ -13441,7 +13441,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub measureNode: ::core::option::Option<
@@ -13466,7 +13466,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub layoutNode: ::core::option::Option<
@@ -13495,7 +13495,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub addNodeEventReceiver: ::core::option::Option<
@@ -13516,7 +13516,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub removeNodeEventReceiver: ::core::option::Option<
@@ -13548,7 +13548,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub addNodeCustomEventReceiver: ::core::option::Option<
@@ -13571,7 +13571,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub removeNodeCustomEventReceiver: ::core::option::Option<
@@ -13594,7 +13594,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub setUserData: ::core::option::Option<
@@ -13627,7 +13627,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub setLengthMetricUnit: ::core::option::Option<
@@ -13656,7 +13656,7 @@ pub struct ArkUI_NativeNodeAPI_1 {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     pub removeAllChildren:
@@ -13855,9 +13855,9 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INDEX_OUT_OF_RANGE`] if the parameter length exceeds
+    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INDEX_OUT_OF_RANGE`](crate::native_type::ArkUiErrorCode::NODE_EVENT_PARAM_INDEX_OUT_OF_RANGE) if the parameter length exceeds
     /// the limit.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INVALID`] if the data does not exist in the component event.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::NODE_EVENT_PARAM_INVALID) if the data does not exist in the component event.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -13884,9 +13884,9 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INDEX_OUT_OF_RANGE`] if the parameter length exceeds
+    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INDEX_OUT_OF_RANGE`](crate::native_type::ArkUiErrorCode::NODE_EVENT_PARAM_INDEX_OUT_OF_RANGE) if the parameter length exceeds
     /// the limit.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INVALID`] if the data does not exist in the component event.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::NODE_EVENT_PARAM_INVALID) if the data does not exist in the component event.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -13911,8 +13911,8 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_NO_RETURN`] if the component event does not support return values.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INVALID`] if data does not exist in the component event.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_NO_RETURN`](crate::native_type::ArkUiErrorCode::NODE_EVENT_NO_RETURN) if the component event does not support return values.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_EVENT_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::NODE_EVENT_PARAM_INVALID) if data does not exist in the component event.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -13968,7 +13968,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14005,7 +14005,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14035,7 +14035,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14055,7 +14055,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14079,7 +14079,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14103,7 +14103,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14127,7 +14127,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14154,7 +14154,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14250,7 +14250,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14271,7 +14271,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14400,7 +14400,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     /// <br> Possible causes: Parameter verification failed, the parameter should not be nullptr.
     ///
     /// Available since API-level: 12
@@ -14422,7 +14422,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     /// <br> Possible causes: Parameter verification failed, the parameter should not be nullptr.
     ///
     /// Available since API-level: 12
@@ -14444,7 +14444,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     /// <br> Possible causes: Parameter verification failed, the parameter should not be nullptr.
     ///
     /// Available since API-level: 12
@@ -14466,7 +14466,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14519,7 +14519,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14556,8 +14556,8 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`] if the node has already been adopted. add since api 22.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`](crate::native_type::ArkUiErrorCode::NODE_IS_ADOPTED) if the node has already been adopted. add since api 22.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14578,7 +14578,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14601,8 +14601,8 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`] if the node has already been adopted. add since api 22.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`](crate::native_type::ArkUiErrorCode::NODE_IS_ADOPTED) if the node has already been adopted. add since api 22.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14625,7 +14625,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14647,7 +14647,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14669,7 +14669,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14691,7 +14691,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14713,7 +14713,7 @@ extern "C" {
     ///
     /// * Result code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     #[cfg(feature = "api-20")]
@@ -14735,7 +14735,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14757,7 +14757,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -14813,7 +14813,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 14
     #[cfg(feature = "api-14")]
@@ -14849,7 +14849,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 14
     #[cfg(feature = "api-14")]
@@ -14914,8 +14914,8 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
-    /// [`ARKUI_ERROR_CODE_NODE_NOT_ON_MAIN_TREE`] The node is not mounted.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_NODE_NOT_ON_MAIN_TREE`](crate::native_type::ArkUiErrorCode::NODE_NOT_ON_MAIN_TREE) The node is not mounted.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -14936,7 +14936,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -14957,7 +14957,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -14982,7 +14982,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15007,8 +15007,8 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
-    /// [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`] The component does not support this event.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED`](crate::native_type::ArkUiErrorCode::ATTRIBUTE_OR_EVENT_NOT_SUPPORTED) The component does not support this event.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -15048,7 +15048,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -15088,7 +15088,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 12
     #[cfg(feature = "api-12")]
@@ -15157,7 +15157,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15181,9 +15181,9 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
-    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`] if the CAPI init error.
-    /// [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`] if the node has already been adopted. add since api 22.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`](crate::native_type::ArkUiErrorCode::CAPI_INIT_ERROR) if the CAPI init error.
+    /// [`ARKUI_ERROR_CODE_NODE_IS_ADOPTED`](crate::native_type::ArkUiErrorCode::NODE_IS_ADOPTED) if the node has already been adopted. add since api 22.
     ///
     /// Available since API-level: 18
     #[cfg(feature = "api-18")]
@@ -15207,7 +15207,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 21
     #[cfg(feature = "api-21")]
@@ -15225,7 +15225,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15246,7 +15246,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15269,7 +15269,7 @@ extern "C" {
     ///
     /// * error code
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter is incorrect.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter is incorrect.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15295,7 +15295,7 @@ extern "C" {
     ///
     /// * error code
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter is incorrect.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter is incorrect.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15317,7 +15317,7 @@ extern "C" {
     ///
     /// * error code
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter is incorrect.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter is incorrect.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15333,7 +15333,7 @@ extern "C" {
     ///
     /// * error code
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter is incorrect.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter is incorrect.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15355,9 +15355,9 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_INTERNAL_ERROR`] if the snapshot taking failed will null pixelmap returned.
-    /// Returns [`ARKUI_ERROR_CODE_COMPONENT_SNAPSHOT_TIMEOUT`] if the snapshot taking is timeout.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_INTERNAL_ERROR`](crate::native_type::ArkUiErrorCode::INTERNAL_ERROR) if the snapshot taking failed will null pixelmap returned.
+    /// Returns [`ARKUI_ERROR_CODE_COMPONENT_SNAPSHOT_TIMEOUT`](crate::native_type::ArkUiErrorCode::COMPONENT_SNAPSHOT_TIMEOUT) if the snapshot taking is timeout.
     ///
     /// Available since API-level: 15
     ////**
@@ -15378,12 +15378,12 @@ extern "C" {
     ///
     /// * Result code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_INTERNAL_ERROR`] if the snapshot fails, returning a null pointer.
-    /// Returns [`ARKUI_ERROR_CODE_COMPONENT_SNAPSHOT_TIMEOUT`] if the snapshot operation times out.
-    /// Returns [`ARKUI_ERROR_CODE_COMPONENT_SNAPSHOT_MODE_NOT_SUPPORTED`] if the provided color space or
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_INTERNAL_ERROR`](crate::native_type::ArkUiErrorCode::INTERNAL_ERROR) if the snapshot fails, returning a null pointer.
+    /// Returns [`ARKUI_ERROR_CODE_COMPONENT_SNAPSHOT_TIMEOUT`](crate::native_type::ArkUiErrorCode::COMPONENT_SNAPSHOT_TIMEOUT) if the snapshot operation times out.
+    /// Returns [`ARKUI_ERROR_CODE_COMPONENT_SNAPSHOT_MODE_NOT_SUPPORTED`](crate::native_type::ArkUiErrorCode::COMPONENT_SNAPSHOT_MODE_NOT_SUPPORTED) if the provided color space or
     /// dynamic range mode is not supported.
-    /// Returns [`ARKUI_ERROR_CODE_COMPONENT_SNAPSHOT_AUTO_NOT_SUPPORTED`] if the isAuto parameter of the color
+    /// Returns [`ARKUI_ERROR_CODE_COMPONENT_SNAPSHOT_AUTO_NOT_SUPPORTED`](crate::native_type::ArkUiErrorCode::COMPONENT_SNAPSHOT_AUTO_NOT_SUPPORTED) if the isAuto parameter of the color
     /// space or dynamic range mode is set to true for offscreen node snapshot.
     ///
     /// Available since API-level: 23
@@ -15406,7 +15406,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -15451,7 +15451,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     #[cfg(feature = "api-20")]
@@ -15478,7 +15478,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 20
     #[cfg(feature = "api-20")]
@@ -15498,9 +15498,9 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`] if the CAPI init error.
-    /// Returns [`ARKUI_ERROR_CODE_UI_CONTEXT_INVALID`] if the uiContext is invalid.
-    /// Returns [`ARKUI_ERROR_CODE_CALLBACK_INVALID`] if the callback function is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`](crate::native_type::ArkUiErrorCode::CAPI_INIT_ERROR) if the CAPI init error.
+    /// Returns [`ARKUI_ERROR_CODE_UI_CONTEXT_INVALID`](crate::native_type::ArkUiErrorCode::UI_CONTEXT_INVALID) if the uiContext is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_CALLBACK_INVALID`](crate::native_type::ArkUiErrorCode::CALLBACK_INVALID) if the callback function is invalid.
     ///
     /// Available since API-level: 20
     #[cfg(feature = "api-20")]
@@ -15522,8 +15522,8 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
-    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`] if the CAPI init error.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`](crate::native_type::ArkUiErrorCode::CAPI_INIT_ERROR) if the CAPI init error.
     ///
     /// Available since API-level: 20
     #[cfg(feature = "api-20")]
@@ -15544,8 +15544,8 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
-    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`] if the CAPI init error.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`](crate::native_type::ArkUiErrorCode::CAPI_INIT_ERROR) if the CAPI init error.
     ///
     /// Available since API-level: 20
     #[cfg(feature = "api-20")]
@@ -15564,8 +15564,8 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
-    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`] if the CAPI init error.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`](crate::native_type::ArkUiErrorCode::CAPI_INIT_ERROR) if the CAPI init error.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -15588,10 +15588,10 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`] if the CAPI init error.
-    /// [`ARKUI_ERROR_CODE_NODE_HAS_PARENT`] The child already has a parent node.
-    /// [`ARKUI_ERROR_CODE_NODE_CAN_NOT_BE_ADOPTED`] The child can not be adopted.
-    /// [`ARKUI_ERROR_CODE_NODE_CAN_NOT_ADOPT_TO`] The node can not adopt children.
+    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`](crate::native_type::ArkUiErrorCode::CAPI_INIT_ERROR) if the CAPI init error.
+    /// [`ARKUI_ERROR_CODE_NODE_HAS_PARENT`](crate::native_type::ArkUiErrorCode::NODE_HAS_PARENT) The child already has a parent node.
+    /// [`ARKUI_ERROR_CODE_NODE_CAN_NOT_BE_ADOPTED`](crate::native_type::ArkUiErrorCode::NODE_CAN_NOT_BE_ADOPTED) The child can not be adopted.
+    /// [`ARKUI_ERROR_CODE_NODE_CAN_NOT_ADOPT_TO`](crate::native_type::ArkUiErrorCode::NODE_CAN_NOT_ADOPT_TO) The node can not adopt children.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -15610,8 +15610,8 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`] if the CAPI init error.
-    /// [`ARKUI_ERROR_CODE_NODE_IS_NOT_IN_ADOPTED_CHILDREN`] This child node is not adopted by the parent node.
+    /// [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`](crate::native_type::ArkUiErrorCode::CAPI_INIT_ERROR) if the CAPI init error.
+    /// [`ARKUI_ERROR_CODE_NODE_IS_NOT_IN_ADOPTED_CHILDREN`](crate::native_type::ArkUiErrorCode::NODE_IS_NOT_IN_ADOPTED_CHILDREN) This child node is not adopted by the parent node.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -15638,8 +15638,8 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`] if CAPI init error.
-    /// Returns [`ARKUI_ERROR_CODE_FORCE_DARK_CONFIG_INVALID`] if force dark config is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_CAPI_INIT_ERROR`](crate::native_type::ArkUiErrorCode::CAPI_INIT_ERROR) if CAPI init error.
+    /// Returns [`ARKUI_ERROR_CODE_FORCE_DARK_CONFIG_INVALID`](crate::native_type::ArkUiErrorCode::FORCE_DARK_CONFIG_INVALID) if force dark config is invalid.
     ///
     /// Available since API-level: 20
     #[cfg(feature = "api-20")]
@@ -15666,8 +15666,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function params is invalid.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_UNSUPPORTED_EVENT_TYPE`] Function parameter eventType is not supported.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function params is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_UNSUPPORTED_EVENT_TYPE`](crate::native_type::ArkUiErrorCode::NODE_UNSUPPORTED_EVENT_TYPE) Function parameter eventType is not supported.
     ///
     /// Available since API-level: 21
     #[cfg(feature = "api-21")]
@@ -15690,8 +15690,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function params is invalid.
-    /// Returns [`ARKUI_ERROR_CODE_NODE_UNSUPPORTED_EVENT_TYPE`] Function parameter eventType is not supported.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function params is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_NODE_UNSUPPORTED_EVENT_TYPE`](crate::native_type::ArkUiErrorCode::NODE_UNSUPPORTED_EVENT_TYPE) Function parameter eventType is not supported.
     ///
     /// Available since API-level: 21
     #[cfg(feature = "api-21")]
@@ -15720,7 +15720,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function params is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function params is invalid.
     ///
     /// Available since API-level: 21
     #[cfg(feature = "api-21")]
@@ -15743,7 +15743,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function params is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function params is invalid.
     ///
     /// Available since API-level: 21
     #[cfg(feature = "api-21")]
@@ -15766,8 +15766,8 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
-    /// [`ARKUI_ERROR_CODE_NODE_NOT_ON_MAIN_TREE`] The target node is not on main tree.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_NODE_NOT_ON_MAIN_TREE`](crate::native_type::ArkUiErrorCode::NODE_NOT_ON_MAIN_TREE) The target node is not on main tree.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -15792,8 +15792,8 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
-    /// [`ARKUI_ERROR_CODE_NODE_NOT_ON_MAIN_TREE`] The target node is not on main tree.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_NODE_NOT_ON_MAIN_TREE`](crate::native_type::ArkUiErrorCode::NODE_NOT_ON_MAIN_TREE) The target node is not on main tree.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -15813,7 +15813,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -15835,7 +15835,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if context or asyncUITask is nullptr.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if context or asyncUITask is nullptr.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -15864,7 +15864,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if context or task is nullptr.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if context or task is nullptr.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -15887,7 +15887,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_UI_CONTEXT_INVALID`] if the uiContext is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_UI_CONTEXT_INVALID`](crate::native_type::ArkUiErrorCode::UI_CONTEXT_INVALID) if the uiContext is invalid.
     /// for example, 1.uiContext is nullptr 2.can not get container by uiContext.
     /// 3. the uiContext is not belong to atomic service.
     ///
@@ -15912,7 +15912,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if context or task is nullptr.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if context or task is nullptr.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
@@ -15938,7 +15938,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -15960,7 +15960,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -15983,7 +15983,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -16001,7 +16001,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -16018,7 +16018,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -16034,7 +16034,7 @@ extern "C" {
     ///
     /// * Error code.
     /// [`ARKUI_ERROR_CODE_NO_ERROR`] Success.
-    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`] Function parameter exception.
+    /// [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) Function parameter exception.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]

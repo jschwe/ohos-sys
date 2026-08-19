@@ -113,7 +113,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
     ///
     /// Available since API-level: 14
     #[cfg(feature = "api-14")]
@@ -139,8 +139,8 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter error occurs.
-    /// Returns [`ARKUI_ERROR_CODE_INVALID_STYLED_STRING`] if the styled string is invalid.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter error occurs.
+    /// Returns [`ARKUI_ERROR_CODE_INVALID_STYLED_STRING`](crate::native_type::ArkUiErrorCode::INVALID_STYLED_STRING) if the styled string is invalid.
     ///
     /// Available since API-level: 14
     #[cfg(feature = "api-14")]
@@ -173,7 +173,7 @@ extern "C" {
     ///
     /// * Returns the result code.
     /// Returns [`ARKUI_ERROR_CODE_NO_ERROR`] if the operation is successful.
-    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`] if a parameter exception occurs.
+    /// Returns [`ARKUI_ERROR_CODE_PARAM_INVALID`](crate::native_type::ArkUiErrorCode::PARAM_INVALID) if a parameter exception occurs.
     ///
     /// Available since API-level: 22
     #[cfg(feature = "api-22")]
