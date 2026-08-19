@@ -1,6 +1,6 @@
 [package]
 name = "xcomponent-sys"
-version = "0.3.6"
+version = "0.4.0"
 edition = "2021"
 description = "Raw Bindings to the `xcomponent` API of OpenHarmony"
 license = "Apache-2.0"
@@ -14,6 +14,9 @@ document-features = { version = "0.2", optional = true }
 keyboard-types = { version = "0.8", optional = true }
 arkui-sys = { version = "0.3.0", path = "../arkui", optional = true}
 ohos-sys-opaque-types = { workspace = true }
+
+[dev-dependencies]
+keyboard-types = { version = "0.8", features = ["webdriver"] }
 
 [features]
 default = []

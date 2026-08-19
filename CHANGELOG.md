@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- xcomponent 0.4.0: the `keyboard-types` feature now covers the full key-event
+  translation (`Code`, `NamedKey`, `Location`, US-layout characters and a
+  stateful `KeyEventConverter`), and linking `ace_ndk.z` is limited to
+  OpenHarmony targets so the crate's tests run on the host.
+
 ## v0.9.0
 
 ### Added

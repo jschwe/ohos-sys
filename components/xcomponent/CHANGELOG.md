@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0
+
+- `ace_ndk.z` is now only linked when compiling for ohos.
+  This allows running tests using constants on the host.
+- `keyboard-types` feature: extend the `Code` conversion.
+  Changed: `KEY_PLAYPAUSE` now maps to `MediaPlayPause` instead of `Pause`.
+- `keyboard-types` feature: add `named_key`, `location`, the US-layout
+  character lookup `us_char`.
+
 ## 0.3.6
 
 - Add support up to API-23. Adds `OH_ArkUI_XComponentSurfaceConfig` and

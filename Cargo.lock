@@ -56,6 +56,7 @@ checksum = "fd6e0f18953c66af118a70064505bd3780a226d65b06553b7293fb8933067967"
 dependencies = [
  "bitflags",
  "serde",
+ "unicode-segmentation",
 ]
 
 [[package]]
@@ -390,8 +391,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e91b56cd4cadaeb79bbf1a5645f6b4f8dc5bde8834ad5894a8db35fda9efa1fe"
 
 [[package]]
+name = "unicode-segmentation"
+version = "1.13.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c6f5d3c3b1bf09027a88a6bc961fc00497d651009560b5463668dc81b0fa87a8"
+
+[[package]]
 name = "xcomponent-sys"
-version = "0.3.6"
+version = "0.4.0"
 dependencies = [
  "arkui-sys",
  "document-features",
