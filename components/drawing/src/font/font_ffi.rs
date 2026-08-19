@@ -383,7 +383,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font, str
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font, str
     /// and textWidth is nullptr or strlen(str) is 0.
     ///
     /// Available since API-level: 12
@@ -414,7 +414,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font, str
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font, str
     /// fontFeatures or textWidth is nullptr, or if strlen(str) is 0.
     ///
     /// Available since API-level: 20
@@ -450,7 +450,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font, text
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font, text
     /// and textWidth is nullptr or byteLength is 0.
     ///
     /// Available since API-level: 12
@@ -492,7 +492,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font, text
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font, text
     /// and textWidth is nullptr or byteLength is 0 or brush and pen are both not empty.
     ///
     /// Available since API-level: 19
@@ -534,7 +534,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font and glyphs is nullptr
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font and glyphs is nullptr
     /// or count is no larger than 0 or brush and pen are both not empty.
     ///
     /// Available since API-level: 19
@@ -571,7 +571,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font, glyphs and points is nullptr or
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font, glyphs and points is nullptr or
     /// count is no larger than 0.
     ///
     /// Available since API-level: 19
@@ -600,7 +600,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font and spacing is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font and spacing is nullptr.
     ///
     /// Available since API-level: 19
     ///
@@ -907,7 +907,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font, glyphs
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font, glyphs
     /// and bounds is nullptr or count is 0.
     ///
     /// Available since API-level: 18
@@ -937,7 +937,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font, path
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font, path
     /// is nullptr or glyph not exist.
     ///
     /// Available since API-level: 18
@@ -975,7 +975,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if any of font, text or path is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if any of font, text or path is nullptr.
     ///
     /// Available since API-level: 18
     #[cfg(feature = "api-18")]
@@ -1022,7 +1022,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if either fontFeatures or name is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if either fontFeatures or name is nullptr.
     ///
     /// Available since API-level: 20
     ///
@@ -1046,7 +1046,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if fontFeatures is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if fontFeatures is nullptr.
     ///
     /// Available since API-level: 20
     ///
@@ -1070,7 +1070,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if font is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if font is nullptr.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]
@@ -1093,7 +1093,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if font or followed is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if font or followed is nullptr.
     ///
     /// Available since API-level: 15
     #[cfg(feature = "api-15")]

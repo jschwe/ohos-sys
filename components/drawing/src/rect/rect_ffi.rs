@@ -312,7 +312,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if rectArray or pSize is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if rectArray or pSize is nullptr.
     ///
     /// Available since API-level: 18
     ///
@@ -339,7 +339,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if rectArray or rect is nullptr,
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if rectArray or rect is nullptr,
     /// or index is valid.
     ///
     /// Available since API-level: 18
@@ -364,7 +364,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if rectArray is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if rectArray is nullptr.
     ///
     /// Available since API-level: 18
     ///
@@ -388,7 +388,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if rect, other or isContains is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if rect, other or isContains is nullptr.
     ///
     /// Available since API-level: 22
     ///
@@ -418,7 +418,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if rect is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if rect is nullptr.
     ///
     /// Available since API-level: 22
     ///
@@ -444,7 +444,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if rect or isEmpty is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if rect or isEmpty is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -468,7 +468,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if rect is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if rect is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -492,7 +492,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if rect is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if rect is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -512,7 +512,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if rect is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if rect is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -529,7 +529,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if rect is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if rect is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -547,7 +547,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if rect or other is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if rect or other is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]

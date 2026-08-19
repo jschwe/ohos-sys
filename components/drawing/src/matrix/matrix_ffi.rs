@@ -493,7 +493,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if matrix or value is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if matrix or value is nullptr.
     ///
     /// Available since API-level: 12
     ///
@@ -523,7 +523,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if a or b is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if a or b is nullptr.
     ///
     /// Available since API-level: 22
     ///
@@ -784,7 +784,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if matrix or isAffine is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if matrix or isAffine is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -811,7 +811,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if matrix is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if matrix is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -835,7 +835,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if matrix or isRectStaysRect is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if matrix or isRectStaysRect is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -862,7 +862,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if matrix is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if matrix is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]

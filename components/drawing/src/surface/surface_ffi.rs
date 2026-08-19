@@ -89,7 +89,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`] if surface is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INVALID_PARAMETER`](crate::error_code::DrawingErrorCode::INVALID_PARAMETER) if surface is nullptr.
     ///
     /// Available since API-level: 16
     ///

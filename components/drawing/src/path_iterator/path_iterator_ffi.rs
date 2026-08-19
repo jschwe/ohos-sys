@@ -45,7 +45,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if path or pathIterator is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if path or pathIterator is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -64,7 +64,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if pathIterator is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if pathIterator is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -84,7 +84,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if pathIterator or hasNext is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if pathIterator or hasNext is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -111,8 +111,8 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if any of pathIterator, points and verb is nullptr.
-    /// Returns [`OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE`] if count is less than offset plus 4.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if any of pathIterator, points and verb is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE`](crate::error_code::DrawingErrorCode::PARAMETER_OUT_OF_RANGE) if count is less than offset plus 4.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -136,7 +136,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if pathIterator or verb is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if pathIterator or verb is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]

@@ -35,7 +35,7 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] If the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] If lattice is nullptr.
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) If lattice is nullptr.
     ///
     /// Available since API-level: 23
     #[cfg(feature = "api-23")]
@@ -79,11 +79,11 @@ extern "C" {
     ///
     /// * Returns the error code.
     /// Returns [`OH_DRAWING_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`] if xDivs or yDivs is nullptr;
+    /// Returns [`OH_DRAWING_ERROR_INCORRECT_PARAMETER`](crate::error_code::DrawingErrorCode::INCORRECT_PARAMETER) if xDivs or yDivs is nullptr;
     /// if rectTypes or colors exists, rectTypeCount or colorCount
     /// does not equal (xCount + 1) * (yCount + 1);
     /// if rectTypes or colors is nullptr, rectTypeCount or colorCount does not equal 0.
-    /// Returns [`OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE`] the enumeration values of rectTypes
+    /// Returns [`OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE`](crate::error_code::DrawingErrorCode::PARAMETER_OUT_OF_RANGE) the enumeration values of rectTypes
     /// exceed the enumeration range.
     ///
     /// Available since API-level: 23
