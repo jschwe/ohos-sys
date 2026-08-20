@@ -1,9 +1,13 @@
 mod dir_conf;
+mod doc_imports;
+mod doc_links;
 mod enum_prefix;
 mod header_conf;
 mod opaque_types;
 
 use crate::dir_conf::get_module_bindings_config;
+use crate::doc_imports::apply_doc_imports;
+use crate::doc_links::retarget_doc_links;
 use crate::header_conf::get_bindings_config;
 use anyhow::{anyhow, bail, Context};
 use bindgen::callbacks::EnumVariantValue;
@@ -392,7 +396,9 @@ impl bindgen::callbacks::ParseCallbacks for DoxygenCommentCb {
         }
         // Replace manual linebreaks in doxygen with double linebreaks for markdown.
         let comment = comment.replace("\\n", "\n");
-        Some(doxygen_rs::transform(comment.trim_end_matches("\n")))
+        Some(retarget_doc_links(doxygen_rs::transform(
+            comment.trim_end_matches("\n"),
+        )))
     }
 
     fn parse_comments_for_attributes(&self, comment: &str) -> Vec<CodeGenAttributes> {
@@ -580,6 +586,7 @@ fn generate_bindings(sdk_native_dir: &Path, api_version: u32) -> anyhow::Result<
         // Transitively pulled in.
         let builder = builder.blocklist_file(r".*/info/application_target_sdk_version\.h");
         let builder = (binding.set_builder_opts)(builder);
+        let builder = apply_doc_imports(builder, &format!("{}_ffi.rs", binding.output_prefix));
         let bindings = builder.generate().context("Bindgen failed")?;
 
         bindings
@@ -654,6 +661,11 @@ fn generate_bindings(sdk_native_dir: &Path, api_version: u32) -> anyhow::Result<
                 .header(header_filename_str)
                 .allowlist_file(header_filename_str);
             let builder = (binding.set_builder_opts)(&file_stem, file_path.as_path(), builder);
+            let output_rel = format!(
+                "{}/{file_stem}/{file_stem}_ffi.rs",
+                binding.output_dir
+            );
+            let builder = apply_doc_imports(builder, &output_rel);
 
             let bindings = builder.generate().context("Bindgen failed")?;
             let base_path = root_dir.join(&binding.output_dir).join(&file_stem);

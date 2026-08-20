@@ -12,6 +12,8 @@ use crate::avbuffer_info::OH_AVCodecBufferAttr;
 #[cfg(feature = "api-11")]
 #[allow(unused_imports)]
 use crate::avcodec_base::OH_AVCodecCallback;
+#[cfg(doc)]
+use crate::avcodec_base::*;
 #[allow(unused_imports)]
 use crate::avcodec_base::{OH_AVCodec, OH_AVCodecAsyncCallback};
 #[allow(unused_imports)]

@@ -8,6 +8,8 @@
 use crate::averrors::OH_AVErrCode;
 #[allow(unused_imports)]
 use crate::avformat::OH_AVFormat;
+#[cfg(doc)]
+use crate::avformat::*;
 #[cfg(feature = "api-23")]
 use crate::avmedia_base::OH_AVMedia_SeekMode;
 #[cfg(feature = "api-23")]

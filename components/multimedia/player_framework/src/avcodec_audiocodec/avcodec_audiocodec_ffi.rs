@@ -6,12 +6,16 @@
 #![allow(deprecated)]
 #[allow(unused_imports)]
 use crate::avbuffer::OH_AVBuffer;
+#[cfg(doc)]
+use crate::avcodec_base::*;
 #[allow(unused_imports)]
 use crate::avcodec_base::{OH_AVCodec, OH_AVCodecCallback};
 #[allow(unused_imports)]
 use crate::averrors::OH_AVErrCode;
 #[allow(unused_imports)]
 use crate::avformat::OH_AVFormat;
+#[cfg(doc)]
+use crate::avformat::*;
 
 /// MediaKeySession field.
 ///

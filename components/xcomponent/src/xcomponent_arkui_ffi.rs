@@ -47,8 +47,8 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns the error code.
-    /// Returns [`OH_NATIVEXCOMPONENT_RESULT_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER`] if a parameter error occurs.
+    /// Returns [`XcomponentResult::SUCCESS`](crate::XcomponentResult::SUCCESS) if the operation is successful.
+    /// Returns [`XcomponentResult::BAD_PARAMETER`](crate::XcomponentResult::BAD_PARAMETER) if a parameter error occurs.
     ///
     ///
     /// Available since API-level: 12
@@ -74,8 +74,8 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns the error code.
-    /// Returns [`OH_NATIVEXCOMPONENT_RESULT_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER`] if a parameter error occurs.
+    /// Returns [`XcomponentResult::SUCCESS`](crate::XcomponentResult::SUCCESS) if the operation is successful.
+    /// Returns [`XcomponentResult::BAD_PARAMETER`](crate::XcomponentResult::BAD_PARAMETER) if a parameter error occurs.
     ///
     ///
     /// Available since API-level: 12

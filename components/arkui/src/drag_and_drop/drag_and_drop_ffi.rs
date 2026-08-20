@@ -4,6 +4,8 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 use crate::native_type::*;
+#[cfg(doc)]
+use crate::ui_input_event::*;
 #[cfg(feature = "api-12")]
 use ohos_sys_opaque_types::ArkUI_ContextHandle;
 pub use ohos_sys_opaque_types::OH_PixelmapNative;

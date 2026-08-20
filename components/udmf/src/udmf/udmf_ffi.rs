@@ -3,6 +3,8 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#[cfg(doc)]
+use crate::udmf_err_code::*;
 use ohos_sys_opaque_types::*;
 
 pub const UDMF_KEY_BUFFER_LEN: u32 = 512;

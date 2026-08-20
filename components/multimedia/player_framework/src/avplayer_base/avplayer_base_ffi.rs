@@ -8,6 +8,8 @@
 use crate::averrors::OH_AVErrCode;
 #[cfg(feature = "api-12")]
 use crate::avformat::OH_AVFormat;
+#[cfg(all(doc, feature = "api-11"))]
+use crate::avplayer::*;
 
 #[repr(C)]
 pub struct OH_AVPlayer {

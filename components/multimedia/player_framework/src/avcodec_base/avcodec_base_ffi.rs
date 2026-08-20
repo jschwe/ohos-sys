@@ -6,10 +6,20 @@
 #![allow(deprecated)]
 #[cfg(feature = "api-11")]
 use crate::avbuffer::OH_AVBuffer;
+#[cfg(all(doc, feature = "api-11"))]
+use crate::avbuffer::*;
 use crate::avbuffer_info::OH_AVCodecBufferAttr;
+#[cfg(all(doc, feature = "api-10"))]
+use crate::avcapability::*;
+#[cfg(doc)]
+use crate::avcodec_videodecoder::*;
+#[cfg(doc)]
+use crate::avcodec_videoencoder::*;
 #[allow(unused_imports)]
 use crate::averrors::OH_AVErrCode;
 use crate::avformat::OH_AVFormat;
+#[cfg(doc)]
+use crate::avformat::*;
 use crate::avmemory::OH_AVMemory;
 
 /// Forward declaration of OH_AVCodec.

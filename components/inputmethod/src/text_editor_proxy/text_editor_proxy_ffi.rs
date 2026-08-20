@@ -3,6 +3,8 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#[cfg(doc)]
+use crate::controller::*;
 use crate::private_command::InputMethod_PrivateCommand;
 use crate::text_config::InputMethod_TextConfig;
 use crate::types::*;

@@ -3,6 +3,10 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#[cfg(doc)]
+use crate::image_processing::*;
+#[cfg(all(doc, feature = "video-processing"))]
+use crate::video_processing::*;
 
 /// Define the object for image processing.
 ///

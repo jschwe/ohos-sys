@@ -11,6 +11,8 @@ use crate::predicates::OH_Predicates;
 use crate::rdb_types::OH_RDB_ReturningContext;
 #[cfg(feature = "api-18")]
 use crate::rdb_types::{OH_Data_Value, OH_Data_Values, Rdb_ConflictResolution};
+#[cfg(doc)]
+use crate::relational_store_error_code::*;
 #[cfg(feature = "api-18")]
 use crate::values_bucket::{OH_Data_VBuckets, OH_VBucket};
 

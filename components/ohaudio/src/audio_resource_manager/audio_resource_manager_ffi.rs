@@ -4,6 +4,8 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 use crate::audio_common::OH_AudioCommon_Result;
+#[cfg(all(doc, feature = "api-12"))]
+use crate::audio_routing_manager::*;
 
 /// Declare the audio resource manager.
 /// Audio resource manager provides many functions for developer to manage system resources to avoid

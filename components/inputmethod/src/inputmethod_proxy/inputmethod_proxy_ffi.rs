@@ -5,6 +5,8 @@
 #![allow(non_snake_case)]
 #[cfg(feature = "api-15")]
 use crate::attach_options::InputMethod_AttachOptions;
+#[cfg(doc)]
+use crate::controller::*;
 use crate::cursor_info::InputMethod_CursorInfo;
 use crate::private_command::InputMethod_PrivateCommand;
 use crate::types::*;

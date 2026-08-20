@@ -3,10 +3,22 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#[cfg(doc)]
+use crate::drag_and_drop::*;
+#[cfg(doc)]
+use crate::drawable_descriptor::*;
+#[cfg(doc)]
+use crate::native_animate::*;
+#[cfg(all(doc, feature = "api-20"))]
+use crate::native_render::*;
 use crate::native_type::*;
+#[cfg(doc)]
+use crate::styled_string::*;
 #[cfg(feature = "api-22")]
 use crate::ui_input_event::ArkUI_TouchTestInfo;
 use crate::ui_input_event::ArkUI_UIInputEvent;
+#[cfg(doc)]
+use crate::ui_input_event::*;
 #[cfg(feature = "api-12")]
 use ohos_sys_opaque_types::ArkUI_ContextHandle;
 #[cfg(feature = "api-15")]

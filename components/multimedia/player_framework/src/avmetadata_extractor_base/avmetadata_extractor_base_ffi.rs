@@ -6,6 +6,8 @@
 #![allow(deprecated)]
 #[allow(unused_imports)]
 use crate::averrors::OH_AVErrCode;
+#[cfg(all(doc, feature = "api-18"))]
+use crate::media_types::*;
 #[cfg(feature = "api-23")]
 use ohos_sys_opaque_types::OH_PixelmapNative;
 

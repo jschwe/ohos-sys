@@ -3,6 +3,8 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#[cfg(doc)]
+use crate::pasteboard_err_code::*;
 use ohos_sys_opaque_types::OH_UdmfData;
 
 pub const PASTEBOARD_MIMETYPE_TEXT_PLAIN: &::core::ffi::CStr = c"text/plain";

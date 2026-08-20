@@ -11,8 +11,12 @@ use crate::rdb_crypto_param::OH_Rdb_CryptoParam;
 use crate::rdb_transaction::{OH_RDB_TransOptions, OH_Rdb_Transaction};
 #[cfg(feature = "api-23")]
 use crate::rdb_types::OH_RDB_ReturningContext;
+#[cfg(doc)]
+use crate::rdb_types::*;
 #[cfg(feature = "api-18")]
 use crate::rdb_types::{OH_Data_Value, OH_Data_Values, Rdb_ConflictResolution};
+#[cfg(doc)]
+use crate::relational_store_error_code::*;
 use crate::value_object::OH_VObject;
 #[cfg(feature = "api-18")]
 use crate::values_bucket::OH_Data_VBuckets;
